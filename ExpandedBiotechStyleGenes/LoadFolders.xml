@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+	<v1.4>
+		<li>/</li>
+		<li>1.4</li>
+        <li IfModActive="sarg.alphagenes">1.4/Mods/AlphaGenes</li>
+		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.4/Mods/VFE</li>
+        <li IfModActive="SuperheroGenesBase.Mod">1.4/Mods/SuperHeroGenes</li>
+        <li IfModActive="SA.Cryoweapons">1.4/Mods/CryoWeapons</li>
+	</v1.4>
+</loadFolders>
+

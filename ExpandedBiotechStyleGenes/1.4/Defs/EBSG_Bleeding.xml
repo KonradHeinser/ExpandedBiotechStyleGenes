@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Abstract="true" Name="EBSG_BleedingBase">
+        <displayCategory>Healing</displayCategory>
+        <exclusionTags>
+            <li>Bleeding</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_ExtremeHemophilia</defName>
+        <label>extreme hemophilia</label>
+        <description>Carriers of this gene lose blood at an extreme rate(*2) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.1</displayOrderInCategory>
+        <iconPath>EBSG/Gene_MajorHemophilia</iconPath>
+        <biostatMet>4</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bloody</symbol></li>
+                <li><symbol>hemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>philiac</symbol></li>
+                <li><symbol>blood</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_ExtremeHemophilia</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_MajorHemophilia</defName>
+        <label>major hemophilia</label>
+        <description>Carriers of this gene lose blood at a greatly increased rate(*1.75) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.2</displayOrderInCategory>
+        <iconPath>EBSG/Gene_MajorHemophilia</iconPath>
+        <biostatMet>3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bloody</symbol></li>
+                <li><symbol>hemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>philiac</symbol></li>
+                <li><symbol>blood</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_MajorHemophilia</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_Hemophilia</defName>
+        <label>hemophilia</label>
+        <description>Carriers of this gene lose blood at an increased rate(*1.50) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.3</displayOrderInCategory>
+        <iconPath>EBSG/Gene_Hemophilia</iconPath>
+        <biostatMet>2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bloody</symbol></li>
+                <li><symbol>hemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>philiac</symbol></li>
+                <li><symbol>blood</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_Hemophilia</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_MinorHemophilia</defName>
+        <label>minor hemophilia</label>
+        <description>Carriers of this gene lose blood at a slightly increased rate(*1.25) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.4</displayOrderInCategory>
+        <iconPath>EBSG/Gene_Hemophilia</iconPath>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>bloody</symbol></li>
+                <li><symbol>hemo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>philiac</symbol></li>
+                <li><symbol>blood</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_MinorHemophilia</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_MinorBloodClotting</defName>
+        <label>minor blood clotting</label>
+        <description>Carriers of this gene lose blood at a slightly slower rate(*0.75) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.5</displayOrderInCategory>
+        <iconPath>EBSG/Gene_BloodClotting</iconPath>
+        <biostatMet>-1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_MinorBloodClotting</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_BloodClotting</defName>
+        <label>blood clotting</label>
+        <description>Carriers of this gene lose blood at a slower rate(*0.5) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.6</displayOrderInCategory>
+        <iconPath>EBSG/Gene_BloodClotting</iconPath>
+        <biostatMet>-2</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_BloodClotting</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_MajorBloodClotting</defName>
+        <label>major blood clotting</label>
+        <description>Carriers of this gene lose blood at a significantly slower rate(*0.25) whenever they are bleeding.</description>
+        <displayOrderInCategory>99.7</displayOrderInCategory>
+        <iconPath>EBSG/Gene_MajorBloodClotting</iconPath>
+        <biostatMet>-3</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_MajorBloodClotting</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BleedingBase">
+        <defName>EBSG_ExtremeBloodClotting</defName>
+        <label>extreme blood clotting</label>
+        <description>Carriers of this gene are almost incapable of losing blood to open wounds. Unlike superclotting, this will not actually close any wounds, just help the pawn avoid experiencing blood loss.\n\nOn the off-chance that there is something that divides by the bleeding rate multiplier, this was set to a number slightly above zero.</description>
+        <displayOrderInCategory>99.8</displayOrderInCategory>
+        <iconPath>EBSG/Gene_MajorBloodClotting</iconPath>
+        <biostatMet>-4</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>clot</symbol></li>
+                <li><symbol>scab</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<hediffToWholeBody>EBSG_ExtremeBloodClotting</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef Abstract="true" Name="EBSG_BleedingHediffBase">
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_ExtremeHemophilia</defName>
+        <label>extreme hemophilia</label>
+        <description>This pawn has a genetic disorder that increases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>2</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_MajorHemophilia</defName>
+        <label>major hemophilia</label>
+        <description>This pawn has a genetic disorder that increases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>1.75</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_Hemophilia</defName>
+        <label>hemophilia</label>
+        <description>This pawn has a genetic disorder that increases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>1.50</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_MinorHemophilia</defName>
+        <label>minor hemophilia</label>
+        <description>This pawn has a genetic disorder that increases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>1.25</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_MinorBloodClotting</defName>
+        <label>extreme hemophilia</label>
+        <description>This pawn has a genetic mutation that decreases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>0.75</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_BloodClotting</defName>
+        <label>extreme hemophilia</label>
+        <description>This pawn has a genetic mutation that decreases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>0.5</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_MajorBloodClotting</defName>
+        <label>extreme hemophilia</label>
+        <description>This pawn has a genetic mutation that decreases bleeding rate.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>0.25</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_BleedingHediffBase">
+        <defName>EBSG_ExtremeBloodClotting</defName>
+        <label>extreme hemophilia</label>
+        <description>This pawn has a genetic mutation that decreases bleeding rate to almost zero.</description>
+		<stages>
+			<li>
+                <totalBleedFactor>0.001</totalBleedFactor>
+				<becomeVisible>false</becomeVisible>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>
