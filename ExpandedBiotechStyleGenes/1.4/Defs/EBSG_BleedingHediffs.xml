@@ -57,7 +57,7 @@
 
     <HediffDef ParentName="EBSG_BleedingHediffBase">
         <defName>EBSG_MinorBloodClotting</defName>
-        <label>extreme hemophilia</label>
+        <label>minor blood clotting</label>
         <description>This pawn has a genetic mutation that decreases bleeding rate.</description>
 		<stages>
 			<li>
@@ -69,7 +69,7 @@
 
     <HediffDef ParentName="EBSG_BleedingHediffBase">
         <defName>EBSG_BloodClotting</defName>
-        <label>extreme hemophilia</label>
+        <label>blood clotting</label>
         <description>This pawn has a genetic mutation that decreases bleeding rate.</description>
 		<stages>
 			<li>
@@ -81,7 +81,7 @@
 
     <HediffDef ParentName="EBSG_BleedingHediffBase">
         <defName>EBSG_MajorBloodClotting</defName>
-        <label>extreme hemophilia</label>
+        <label>major blood clotting</label>
         <description>This pawn has a genetic mutation that decreases bleeding rate.</description>
 		<stages>
 			<li>
@@ -93,7 +93,7 @@
 
     <HediffDef ParentName="EBSG_BleedingHediffBase">
         <defName>EBSG_ExtremeBloodClotting</defName>
-        <label>extreme hemophilia</label>
+        <label>extreme blood clotting</label>
         <description>This pawn has a genetic mutation that decreases bleeding rate to almost zero.</description>
 		<stages>
 			<li>
