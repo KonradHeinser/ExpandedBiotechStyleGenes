@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+        <!--Outside mods should put their display orders between 700 and 999-->
+
     <GeneCategoryDef>
         <defName>EBSG_Sensory</defName>
         <label>senses</label>
@@ -58,7 +60,7 @@
         <defName>EBSG_EloquentSpeaker</defName>
         <label>eloquent speaker</label>
         <iconPath>EBSG/Gene_EloquentSpeaker</iconPath>
-        <description>Carriers of this gene are have voices like smooth butter, seeming to draw people in even while they are explaining the dullest of topics.\n\nWhile 150% talking may seem like a massive impact, there are actually very few things that talking impacts throughout the game. This gene may create exceptional negotiators and traders, but outside of those two things the impacts of this gene will not be very noticable.</description>
+        <description>Carriers of this gene have voices like smooth butter, seeming to draw people in even while they are explaining the dullest of topics.\n\nWhile 150% talking may seem like a massive impact, there are actually very few things that talking impacts throughout the game. This gene may create exceptional negotiators and traders, but outside of those two things the impacts of this gene will not be very noticable.</description>
         <displayOrderInCategory>50.1</displayOrderInCategory>
         <biostatMet>-1</biostatMet>
         <capMods>
