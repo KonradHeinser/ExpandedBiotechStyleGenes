@@ -4,7 +4,7 @@
         <defName>EBSG_AcidImmune</defName>
         <label>acid immune</label> 
         <description>Carriers of this gene are immune to acid.</description>
-        <iconPath>Genes/EBSG_AcidImmune</iconPath>
+        <iconPath>EBSG/Gene_AcidImmune</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>121</displayOrderInCategory>
         <damageFactors>
@@ -26,7 +26,7 @@
         <defName>EBSG_AcidResistance</defName>
         <label>acid resistance</label> 
         <description>Carriers of this gene are resistant to acid.</description>
-        <iconPath>Genes/EBSG_AcidResistance</iconPath>
+        <iconPath>EBSG/Gene_AcidResistance</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>120.9</displayOrderInCategory>
         <damageFactors>
@@ -48,7 +48,7 @@
         <defName>EBSG_AcidVulnerable</defName>
         <label>acid vulnerable</label> 
         <description>Carriers of this gene are vulnerable to acid.</description>
-        <iconPath>Genes/EBSG_AcidVulnerable</iconPath>
+        <iconPath>EBSG/Gene_AcidVulnerable</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>120.8</displayOrderInCategory>
         <damageFactors>
@@ -70,7 +70,7 @@
         <defName>EBSG_AcidWeakness</defName>
         <label>acid weakness</label> 
         <description>Carriers of this gene are very weak to acid.</description>
-        <iconPath>Genes/EBSG_AcidWeakness</iconPath>
+        <iconPath>EBSG/Gene_AcidWeakness</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>120.7</displayOrderInCategory>
         <damageFactors>

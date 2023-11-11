@@ -4,7 +4,7 @@
         <defName>EBSG_FrostbiteImmune</defName>
         <label>frostbite immune</label> 
         <description>Carriers of this gene are immune to the damaging effects of extreme cold, though they can still catch hypothermia.</description>
-        <iconPath>Genes/EBSG_FrostbiteImmune</iconPath>
+        <iconPath>EBSG/Gene_FrostbiteImmune</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>120</displayOrderInCategory>
         <damageFactors>
@@ -26,7 +26,7 @@
         <defName>EBSG_FrostbiteResistance</defName>
         <label>frostbite resistance</label> 
         <description>Carriers of this gene are resistant to the damaging effects of extreme cold, though they will still feel the cold nipping at them.</description>
-        <iconPath>Genes/EBSG_FrostbiteResistance</iconPath>
+        <iconPath>EBSG/Gene_FrostbiteResistance</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>119.9</displayOrderInCategory>
         <damageFactors>
@@ -48,7 +48,7 @@
         <defName>EBSG_FrostbiteVulnerable</defName>
         <label>frostbite vulnerable</label> 
         <description>Carriers of this gene are vulnerable to the damaging effects of extreme cold, making them take more damage from frostbite.</description>
-        <iconPath>Genes/EBSG_FrostbiteVulnerable</iconPath>
+        <iconPath>EBSG/Gene_FrostbiteVulnerable</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>119.8</displayOrderInCategory>
         <damageFactors>
@@ -70,7 +70,7 @@
         <defName>EBSG_FrostbiteWeakness</defName>
         <label>frostbite weakness</label> 
         <description>Carriers of this gene are very weak to the damaging effects of extreme cold, making them take more damage from frostbite.</description>
-        <iconPath>Genes/EBSG_FrostbiteWeakness</iconPath>
+        <iconPath>EBSG/Gene_FrostbiteWeakness</iconPath>
         <displayCategory>ResistanceAndWeakness</displayCategory>
         <displayOrderInCategory>119.7</displayOrderInCategory>
         <damageFactors>
