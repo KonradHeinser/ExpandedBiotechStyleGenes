@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThoughtDef>
+        <defName>EBSG_ForestDweller</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_TreesDesiredNoPrecept</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <requiredGenes>
+            <li>EBSG_ForestDweller</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>amazing trees</label>
+                <description>I am surrounded by several massive, beautiful trees. I feel so at home here!</description>
+                <baseMoodEffect>9</baseMoodEffect>
+            </li>
+            <li>
+                <label>amazing tree</label>
+                <description>I very recently encountered a massive, beautiful tree - a splendid place to begin making a home!</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+            <li>
+                <label>remarkable trees</label>
+                <description>I am surrounded by a lush forest.</description>
+                <baseMoodEffect>7</baseMoodEffect>
+            </li>
+            <li>
+                <label>amazing tree</label>
+                <description>I recently encountered a massive, beautiful tree.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+            <li>
+                <label>rich forest</label>
+                <description>I was recently surrounded by a lush forest.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+            <li>
+                <label>full trees</label>
+                <description>I recently walked among many full trees.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>mixed trees</label>
+                <description>I recently walked among a wide variety of trees.</description>
+                <baseMoodEffect>3</baseMoodEffect>
+            </li>
+            <li>
+                <label>full tree</label>
+                <description>I recently encountered a full tree.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>mini trees</label>
+                <description>I was recently surrounded by plenty of miniature trees.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>mini tree</label>
+                <description>I recently got to enjoy the company of a miniature tree.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>no tree</label>
+                <description>I haven't been around any trees in a while.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+            <li>
+                <label>no tree</label>
+                <description>I miss having trees around me.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>trees missed</label>
+                <description>It has been a while since I've been near a tree.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>trees missed</label>
+                <description>It has been too long since I've been near a tree.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>trees sorely missed</label>
+                <description>It has been way too long since I've been near a tree!</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>EBSG_DesertDweller</defName>
+        <thoughtClass>Thought_Situational</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_TreesDesiredNoPrecept</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+        <requiredGenes>
+            <li>EBSG_DesertDweller</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>hated trees</label>
+                <description>I am surrounded by several massive, sun concealing trees. they should be removed!</description>
+                <baseMoodEffect>-9</baseMoodEffect>
+            </li>
+            <li>
+                <label>horrible tree</label>
+                <description>I very recently encountered a massive, sun concealing tree - why is it still standing!</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>remarkable trees</label>
+                <description>I am surrounded by a lush forest.</description>
+                <baseMoodEffect>-7</baseMoodEffect>
+            </li>
+            <li>
+                <label>massive tree</label>
+                <description>I recently encountered a massive, sun concealing tree.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+            <li>
+                <label>rich forest</label>
+                <description>I was recently surrounded by a lush forest.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <li>
+                <label>full trees</label>
+                <description>I recently walked among many full trees.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>mixed trees</label>
+                <description>I recently walked among a wide variety of trees.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+            <li>
+                <label>full tree</label>
+                <description>I recently encountered a full tree.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>mini trees</label>
+                <description>I was recently surrounded by plenty of miniature trees.</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>mini tree</label>
+                <description>I recently saw a miniature tree.</description>
+                <baseMoodEffect>-2</baseMoodEffect>
+            </li>
+            <li>
+                <label>no tree</label>
+                <description>I haven't been around any trees in a while.</description>
+                <baseMoodEffect>1</baseMoodEffect>
+            </li>
+            <li>
+                <label>no tree</label>
+                <description>The lack of trees is starting to make this place feel like home.</description>
+                <baseMoodEffect>2</baseMoodEffect>
+            </li>
+            <li>
+                <label>trees not seen recently</label>
+                <description>It has been a long time since I've been near a tree.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>trees absent</label>
+                <description>It has been so long since I've been forced to see a tree! I finally feel at home now.</description>
+                <baseMoodEffect>5</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>EBSG_PackMember</defName>
+        <thoughtClass>EBSGFramework.Thought_Situational_PeopleInColony</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_PeopleInColony</workerClass>
+        <requiredGenes>
+            <li>EBSG_PackMember</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>pack member alone</label>
+                <description>Being alone makes me feel so nervous. There's nobody here to watch my back.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>pack member in small pack</label>
+                <description>There's so few of us. What if one of us needs to leave for a while and everyone is attacked while they are gone?</description>
+                <baseMoodEffect>-4</baseMoodEffect>
+            </li>
+            <li>
+                <label>pack member in growing pack</label>
+                <description>Life is beginning to become easier as our colony grows.</description>
+                <baseMoodEffect>0</baseMoodEffect>
+            </li>
+            <li>
+                <label>pack member in sizable pack</label>
+                <description>I can rest easier now that there are more of us.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+            <li>
+                <label>pack member in large pack</label>
+                <description>There are many of us here, and we are strong because of it.</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <peopleToMoodCurve>
+                    <points>
+                        <li>(1, -8)</li>
+                        <li>(2, -6)</li>
+                        <li>(3, -5)</li>
+                        <li>(4, -4)</li>
+                        <li>(5, -3)</li>
+                        <li>(6, -2)</li>
+                        <li>(7, 0)</li>
+                        <li>(12, 0)</li>
+                        <li>(13, 4)</li>
+                        <li>(14, 6)</li>
+                        <li>(15, 8)</li>
+                        <li>(16, 12)</li>
+                    </points>
+                </peopleToMoodCurve>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>EBSG_Nomadic</defName>
+        <thoughtClass>EBSGFramework.Thought_Situational_PeopleInColony</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_PeopleInColony</workerClass>
+        <requiredGenes>
+            <li>EBSG_Nomadic</li>
+        </requiredGenes>
+        <stages>
+            <li>
+                <label>nomad alone</label>
+                <description>Without people I can't thrive very well.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+            <li>
+                <label>nomad in small group</label>
+                <description>There aren't very many of us. This makes it easy to move, but we must be careful to avoid losing members.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+            <li>
+                <label>nomad in perfectly sized group</label>
+                <description>This is the ideal number of people.</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+            <li>
+                <label>nomad in sizable group</label>
+                <description>There are plenty of us, which means it will be easy for us to thrive. However, we must be sure to avoid growing much more.</description>
+                <baseMoodEffect>8</baseMoodEffect>
+            </li>
+            <li>
+                <label>nomad in large group</label>
+                <description>There are too many of us. This will make it hard to organize everyone if we need to move quickly.</description>
+                <baseMoodEffect>-8</baseMoodEffect>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <peopleToMoodCurve>
+                    <points>
+                        <li>(1, -8)</li>
+                        <li>(2, -4)</li>
+                        <li>(3, 0)</li>
+                        <li>(4, 8)</li>
+                        <li>(5, 10)</li>
+                        <li>(6, 12)</li>
+                        <li>(11, 12)</li>
+                        <li>(12, 10)</li>
+                        <li>(13, 8)</li>
+                        <li>(14, 0)</li>
+                        <li>(15, -4)</li>
+                        <li>(16, -8)</li>
+                    </points>
+                </peopleToMoodCurve>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+</Defs>
