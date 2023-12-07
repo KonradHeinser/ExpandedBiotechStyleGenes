@@ -4,7 +4,7 @@
         <prerequisite>Deathrest</prerequisite>
         <displayCategory>Hemogen</displayCategory>
         <minAgeActive>3</minAgeActive>
-        <exclusionTags><li>DeathrestSpeed</li></exclusionTags>
+        <exclusionTags><li>EBSG_DeathrestSpeed</li></exclusionTags>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
@@ -122,7 +122,7 @@
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_UnbelievablyFastDeathrestSpeed</defName>
         <label>unbelievably fast deathrest speed</label>
-        <description>Carriers of this gene require 0.50 times as much time to complete a period of deathresting.</description>
+        <description>Carriers of this gene require 0.40 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
         <displayOrderInCategory>667.0</displayOrderInCategory>
         <biostatMet>-6</biostatMet>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_GestationSpeed" Abstract="true">
+        <displayCategory>Reproduction</displayCategory>
+        <minAgeActive>16</minAgeActive>
+        <exclusionTags>
+            <li>EBSG_GestationSpeed</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_SlowGestationMajor</defName>
+        <label>very slow gestation speed</label>
+        <iconPath>EBSG/Gene_SlowGestationSpeedExtreme</iconPath>
+        <description>Carriers of this gene have much slower gestation speeds than normal humans.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>0.25</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_SlowGestation</defName>
+        <label>slow gestation speed</label>
+        <iconPath>EBSG/Gene_SlowGestationSpeed</iconPath>
+        <description>Carriers of this gene have slower gestation speeds than normal humans.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.1</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>0.5</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_SlowGestationMinor</defName>
+        <label>somewhat slow gestation speed</label>
+        <iconPath>EBSG/Gene_SlowGestationSpeed</iconPath>
+        <description>Carriers of this gene have some slower gestation speeds than normal humans.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.2</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>0.75</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_GestationSpeedMinor</defName>
+        <label>somewhat fast gestation speed</label>
+        <iconPath>EBSG/Gene_GestationSpeed</iconPath>
+        <description>Carriers of this gene have pregananies that are a little faster than normal.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.3</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>1.50</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_GestationSpeed</defName>
+        <label>fast gestation speed</label>
+        <iconPath>EBSG/Gene_GestationSpeed</iconPath>
+        <description>Carriers of this gene have pregananies that are faster than normal.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.4</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>2.00</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_GestationSpeedMajor</defName>
+        <label>very fast gestation speed</label>
+        <iconPath>EBSG/Gene_GestationSpeed</iconPath>
+        <description>Carriers of this gene have pregananies that are a lot faster than normal.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.5</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>2.50</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_GestationSpeedExtreme</defName>
+        <label>extremely fast gestation speed</label>
+        <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+        <description>Carriers of this gene have pregananies that are extremely fast compared to normal.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.6</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>3.00</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_GestationSpeedSuper</defName>
+        <label>super fast gestation speed</label>
+        <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+        <description>Carriers of this gene have pregananies that are super fast compared to normal.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.7</displayOrderInCategory>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>3.50</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GestationSpeed">
+        <defName>EBSG_GestationSpeedHyper</defName>
+        <label>hyper fast gestation speed</label>
+        <iconPath>EBSG/Gene_GestationSpeedExtreme</iconPath>
+        <description>Carriers of this gene have pregananies that are unbelievably fast compared to normal.\n\nFor obvious reasons, this doesn't usually have effects on males.</description>
+        <displayOrderInCategory>200.8</displayOrderInCategory>
+        <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EBSG_PawnGestationSpeed>4.00</EBSG_PawnGestationSpeed>
+        </statFactors>
+    </GeneDef>
+</Defs>
