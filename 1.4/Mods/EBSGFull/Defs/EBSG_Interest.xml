@@ -5,7 +5,7 @@
         <displayCategory>EBSG_Passions</displayCategory>
         <description>Carriers of this gene have one more level of passion for this skill.</description>
         <biostatCpx>1</biostatCpx>
-        <biostatMet>1</biostatMet>
+        <biostatMet>-1</biostatMet>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_Interest">
