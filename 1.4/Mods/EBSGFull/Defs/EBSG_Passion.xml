@@ -255,7 +255,7 @@
         <iconPath>EBSG/Gene_RandomPassion</iconPath>
         <displayOrderInCategory>13.6</displayOrderInCategory>
         <exclusionTags>
-            <li>EBSG_Passion_Intellectual</li>
+            <li>EBSG_Passion_Random</li>
         </exclusionTags>
         <modExtensions>
             <li Class="EBSGFramework.EBSGExtension">
