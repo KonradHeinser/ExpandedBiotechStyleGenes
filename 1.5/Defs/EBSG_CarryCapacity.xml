@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>EBSG_CarryCapacity</defName>
+        <label>carry capacities</label>
+        <displayPriorityInXenotype>499.98</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Abstract="true" Name="EBSG_CarryCapacityBase">
+		<displayCategory>EBSG_CarryCapacity</displayCategory>
+        <exclusionTags>
+			<li>EBSG_CarryCapacities</li>
+		</exclusionTags>
+    </GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_SuperHighCarryCapacity</defName>
+		<label>super high carry</label>
+		<description>Carriers of this gene have a super high carry capacity.</description>
+		<iconPath>EBSG/Gene_SuperHighCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>1.8</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>8</displayOrderInCategory>
+		<biostatMet>-4</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_ExtremelyHighCarryCapacity</defName>
+		<label>extremely high carry</label>
+		<description>Carriers of this gene have an extremely high carry capacity.</description>
+		<iconPath>EBSG/Gene_SuperHighCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>1.6</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>7</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_VeryHighCarryCapacity</defName>
+		<label>very high carry</label>
+		<description>Carriers of this gene have a very high carry capacity.</description>
+		<iconPath>EBSG/Gene_HighCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>1.4</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>6</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_HighCarryCapacity</defName>
+		<label>high carry capacity</label>
+		<description>Carriers of this gene have a high carry capacity.</description>
+		<iconPath>EBSG/Gene_HighCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>1.2</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>5</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_LowCarryCapacity</defName>
+		<label>low carry capacity</label>
+		<description>Carriers of this gene have a low carry capacity.</description>
+		<iconPath>EBSG/Gene_LowCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>0.8</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>4</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_VeryLowCarryCapacity</defName>
+		<label>very low carry</label>
+		<description>Carriers of this gene have a very low carry capacity.</description>
+		<iconPath>EBSG/Gene_LowCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>0.6</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>3</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_ExtremelyLowCarryCapacity</defName>
+		<label>extremely low carry</label>
+		<description>Carriers of this gene have an extremely low carry capacity.</description>
+		<iconPath>EBSG/Gene_SuperLowCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>0.4</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>2</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+
+	<GeneDef ParentName="EBSG_CarryCapacityBase">
+		<defName>EBSG_SuperLowCarryCapacity</defName>
+		<label>super low carry</label>
+		<description>Carriers of this gene have a super low carry capacity.</description>
+		<iconPath>EBSG/Gene_SuperLowCarryCapacity</iconPath>
+		<statFactors>
+			<CarryingCapacity>0.2</CarryingCapacity>
+		</statFactors>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatMet>4</biostatMet>
+	</GeneDef>
+</Defs>

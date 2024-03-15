@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <HediffDef Name="EBSG_PartRemover" Abstract="True">
+        <description>A body part will be damaged/removed once the game starts. To avoid weird errors, this needs to occur after the pawn is spawned.</description>
+        <defaultLabelColor>(0.7, 0.7, 0.7)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedKidney</defName>
+        <label>damaging kidney</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Kidney</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingKidney</defName>
+        <label>removing kidney</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Kidney</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingAndDamagedKidney</defName>
+        <label>removing kidney and damaging kidney</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Kidney</li>
+                </bodyPartsToRemove>
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Kidney</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedLung</defName>
+        <label>damaging lung</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Lung</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingLung</defName>
+        <label>removing lung</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Lung</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingAndDamagedLung</defName>
+        <label>removing lung and damaging lung</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Lung</li>
+                </bodyPartsToRemove>
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Lung</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedArm</defName>
+        <label>damaging arm</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Arm</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingArm</defName>
+        <label>removing arm</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Arm</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingAndDamagedArm</defName>
+        <label>removing arm and damaging arm</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Arm</li>
+                </bodyPartsToRemove>
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Arm</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedLeg</defName>
+        <label>damaging leg</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Leg</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingLeg</defName>
+        <label>removing leg</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Leg</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingAndDamagedLeg</defName>
+        <label>removing leg and damaging leg</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Leg</li>
+                </bodyPartsToRemove>
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Leg</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingEar</defName>
+        <label>removing ear</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Ear</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingEars</defName>
+        <label>removing ears</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Ear</li>
+                    <li>Ear</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingEye</defName>
+        <label>removing eye</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Eye</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingEyes</defName>
+        <label>removing eyes</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Eye</li>
+                    <li>Eye</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_SlightlyDamagedBrain</defName>
+        <label>slightly damaging brain</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Brain</bodyPart>
+                        <damagePercentage>0.1</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedBrain</defName>
+        <label>damaging brain</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Brain</bodyPart>
+                        <damagePercentage>0.2</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_SlightlyDamagedHeart</defName>
+        <label>slightly damaging heart</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Heart</bodyPart>
+                        <damagePercentage>0.25</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedHeart</defName>
+        <label>damaging heart</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Heart</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_SlightlyDamagedLiver</defName>
+        <label>slightly damaging liver</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Liver</bodyPart>
+                        <damagePercentage>0.25</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedLiver</defName>
+        <label>damaging liver</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Liver</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_SlightlyDamagedSpine</defName>
+        <label>slightly damaging spine</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Spine</bodyPart>
+                        <damagePercentage>0.25</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedSpine</defName>
+        <label>damaging spine</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Spine</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_DamagedStomach</defName>
+        <label>damaging stomach</label>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToDamage>
+                    <li>
+                        <bodyPart>Stomach</bodyPart>
+                        <damagePercentage>0.5</damagePercentage>
+                    </li>
+                </bodyPartsToDamage>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>

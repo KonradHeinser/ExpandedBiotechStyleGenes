@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch> 
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Deathrest"]/displayOrderInCategory</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Deathrest"]</xpath>
+            <value><displayOrderInCategory>666</displayOrderInCategory></value>
+        </nomatch>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/GeneDef[defName="Deathrest"]/displayOrderInCategory</xpath>
+            <value><displayOrderInCategory>666</displayOrderInCategory></value>
+        </match>
+    </Operation>
+</Patch>

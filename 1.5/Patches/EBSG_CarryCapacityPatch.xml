@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_PackMule"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_PackMule"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+            <value><hideGene>true</hideGene></value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="AG_FrailBack"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="AG_FrailBack"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+            <value><hideGene>true</hideGene></value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods><li>Vanilla Expanded Framework</li></mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_SuperHighCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>1.8</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_ExtremelyHighCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>1.6</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_VeryHighCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>1.4</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_HighCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>1.2</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_LowCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>0.8</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_VeryLowCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>0.6</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_ExtremelyLowCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>0.4</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAddModExtension">
+                    <xpath>Defs/GeneDef[defName="EBSG_SuperLowCarryCapacity"]</xpath>
+                    <value>
+			            <li Class="VanillaGenesExpanded.GeneExtension">
+			                <caravanCarryingFactor>0.2</caravanCarryingFactor>
+			            </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

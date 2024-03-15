@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>EBSG_Passions</defName>
+        <label>EBSG - Passions</label>
+        <displayPriorityInXenotype>190</displayPriorityInXenotype>
+      </GeneCategoryDef>
+    
+    <GeneDef Name="EBSG_NoPassion" Abstract="True">
+        <geneClass>EBSGFramework.Gene_SkillChanging</geneClass>
+        <displayCategory>EBSG_Passions</displayCategory>
+        <description>Carriers of this gene have no passion for this skill.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Shooting</defName>
+        <label>passionless shooting</label>
+        <iconPath>UI/Icons/Genes/Skills/Shooting/Terrible</iconPath>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Shooting</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Shooting</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Melee</defName>
+        <label>passionless melee</label>
+        <iconPath>UI/Icons/Genes/Skills/Melee/Terrible</iconPath>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Melee</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Melee</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Construction</defName>
+        <label>passionless construction</label>
+        <iconPath>UI/Icons/Genes/Skills/Construction/Terrible</iconPath>
+        <displayOrderInCategory>3</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Construction</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Construction</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Mining</defName>
+        <label>passionless mining</label>
+        <iconPath>UI/Icons/Genes/Skills/Mining/Terrible</iconPath>
+        <displayOrderInCategory>4</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Mining</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Mining</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Cooking</defName>
+        <label>passionless cooking</label>
+        <iconPath>UI/Icons/Genes/Skills/Cooking/Terrible</iconPath>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Cooking</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Cooking</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Plants</defName>
+        <label>passionless plants</label>
+        <iconPath>UI/Icons/Genes/Skills/Plants/Terrible</iconPath>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Plants</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Plants</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Animals</defName>
+        <label>passionless animals</label>
+        <iconPath>UI/Icons/Genes/Skills/Animals/Terrible</iconPath>
+        <displayOrderInCategory>7</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Animals</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Animals</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Crafting</defName>
+        <label>passionless crafting</label>
+        <iconPath>UI/Icons/Genes/Skills/Crafting/Terrible</iconPath>
+        <displayOrderInCategory>8</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Crafting</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Crafting</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Artistic</defName>
+        <label>passionless artistic</label>
+        <iconPath>UI/Icons/Genes/Skills/Artistic/Terrible</iconPath>
+        <displayOrderInCategory>9</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Artistic</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Artistic</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Medicine</defName>
+        <label>passionless medical</label>
+        <iconPath>UI/Icons/Genes/Skills/Medicine/Terrible</iconPath>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Medicine</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Medicine</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Social</defName>
+        <label>passionless social</label>
+        <iconPath>UI/Icons/Genes/Skills/Social/Terrible</iconPath>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Social</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Social</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Intellectual</defName>
+        <label>passionless intellectual</label>
+        <iconPath>UI/Icons/Genes/Skills/Intellectual/Terrible</iconPath>
+        <displayOrderInCategory>12</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Intellectual</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Intellectual</skill>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_NoPassion">
+        <defName>EBSG_NoPassion_Random</defName>
+        <label>random passionless</label>
+        <description>Carriers of this gene have no passion for a random skill that would have normally had passion.</description>
+        <iconPath>EBSG/Gene_RandomPassionless</iconPath>
+        <displayOrderInCategory>13</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Random</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <setPassion>True</setPassion>
+                        <passion>None</passion>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+</Defs>
