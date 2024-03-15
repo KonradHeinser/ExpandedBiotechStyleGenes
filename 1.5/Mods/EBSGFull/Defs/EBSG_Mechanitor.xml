@@ -69,20 +69,21 @@
         <description>Carriers of this gene have a mechlink in their head from birth due to complicated and morally questionable genetic engineering.\n\nThis gene will not give any mechs at the start, just the link itself. Removing this gene will remove the mechlink.\n\nMost mechanitor genes that rely on this one dedicate a portion of the xenotype's brain to being able to make a specific mechanitor attribute better. The bonuses are multipliers, meaning they grow stronger as the pawn becomes better with that thing, whether through implants, other genes, or skills. The penalties are offsets, which means they can usually be compensated for more easily.</description>
         <displayOrderInCategory>0</displayOrderInCategory>
         <displayCategory>EBSG_Mechanitor</displayCategory>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
         <biostatMet>-2</biostatMet>
         <customEffectDescriptions>
 			<li>Gives a mechlink.</li>
 		</customEffectDescriptions>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<hediffsToBodyParts>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
 					<li>
 						<hediff>MechlinkImplant</hediff>
-						<bodyparts>
+						<bodyParts>
 							<li>Brain</li>
-						</bodyparts>
+						</bodyParts>
 					</li>
-				</hediffsToBodyParts>
+				</hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -95,20 +96,21 @@
         <displayOrderInCategory>10</displayOrderInCategory>
         <displayCategory>EBSG_Mechanitor</displayCategory>
         <prerequisite>EBSG_InnateMechlink</prerequisite>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
         <biostatMet>-2</biostatMet>
         <customEffectDescriptions>
 			<li>Gives a remote shielder implant.</li>
 		</customEffectDescriptions>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<hediffsToBodyParts>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
 					<li>
 						<hediff>RemoteShielderImplant</hediff>
-						<bodyparts>
+						<bodyParts>
 							<li>Brain</li>
-						</bodyparts>
+						</bodyParts>
 					</li>
-				</hediffsToBodyParts>
+				</hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
@@ -121,20 +123,21 @@
         <displayOrderInCategory>20</displayOrderInCategory>
         <displayCategory>EBSG_Mechanitor</displayCategory>
         <prerequisite>EBSG_InnateMechlink</prerequisite>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
         <biostatMet>-2</biostatMet>
         <customEffectDescriptions>
 			<li>Gives a remote repairer implant.</li>
 		</customEffectDescriptions>
         <modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
-				<hediffsToBodyParts>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
 					<li>
 						<hediff>RemoteRepairerImplant</hediff>
-						<bodyparts>
+						<bodyParts>
 							<li>Brain</li>
-						</bodyparts>
+						</bodyParts>
 					</li>
-				</hediffsToBodyParts>
+				</hediffsToApply>
 			</li>
 		</modExtensions>
     </GeneDef>
