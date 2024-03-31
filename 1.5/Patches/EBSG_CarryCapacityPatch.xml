@@ -15,7 +15,7 @@
             <value><hideGene>true</hideGene></value>
         </match>
     </Operation>
-
+<!--
     <Operation Class="PatchOperationFindMod">
         <mods><li>Vanilla Expanded Framework</li></mods>
         <match Class="PatchOperationSequence">
@@ -87,4 +87,5 @@
             </operations>
         </match>
     </Operation>
+-->
 </Patch>
