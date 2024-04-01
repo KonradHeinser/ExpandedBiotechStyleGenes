@@ -20,6 +20,7 @@
 		<iconPath>EBSG/Gene_SuperHighCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>1.8</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.8</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>8</displayOrderInCategory>
 		<biostatMet>-4</biostatMet>
@@ -32,6 +33,7 @@
 		<iconPath>EBSG/Gene_SuperHighCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>1.6</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.6</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>7</displayOrderInCategory>
 		<biostatMet>-3</biostatMet>
@@ -44,6 +46,7 @@
 		<iconPath>EBSG/Gene_HighCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>1.4</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.4</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>6</displayOrderInCategory>
 		<biostatMet>-2</biostatMet>
@@ -56,6 +59,7 @@
 		<iconPath>EBSG/Gene_HighCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>1.2</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>5</displayOrderInCategory>
 		<biostatMet>-1</biostatMet>
@@ -68,6 +72,7 @@
 		<iconPath>EBSG/Gene_LowCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>0.8</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.8</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>4</displayOrderInCategory>
 		<biostatMet>1</biostatMet>
@@ -80,6 +85,7 @@
 		<iconPath>EBSG/Gene_LowCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>0.6</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.6</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>3</displayOrderInCategory>
 		<biostatMet>2</biostatMet>
@@ -92,6 +98,7 @@
 		<iconPath>EBSG/Gene_SuperLowCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>0.4</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.4</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>2</displayOrderInCategory>
 		<biostatMet>3</biostatMet>
@@ -104,6 +111,7 @@
 		<iconPath>EBSG/Gene_SuperLowCarryCapacity</iconPath>
 		<statFactors>
 			<CarryingCapacity>0.2</CarryingCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_MassCarryCapacity>
 		</statFactors>
 		<displayOrderInCategory>1</displayOrderInCategory>
 		<biostatMet>4</biostatMet>
