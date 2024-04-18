@@ -10,135 +10,125 @@
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_AbysmalDeathrestSpeed</defName>
         <label>abysmal deathrest speed</label>
-        <description>Carriers of this gene require 5 times as much time to complete a period of deathresting, and recharge the Deathrest need at 20% speed.</description>
+        <description>Carriers of this gene require 5 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_AbysmalDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.1</displayOrderInCategory>
         <biostatMet>4</biostatMet>
         <biostatCpx>2</biostatCpx>
         <statFactors>
             <EBSG_DeathrestEfficiency>0.20</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>0.20</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_VerySlowDeathrestSpeed</defName>
         <label>very slow deathrest speed</label>
-        <description>Carriers of this gene require 2.5 times as much time to complete a period of deathresting, and recharge the Deathrest need at 40% speed.</description>
+        <description>Carriers of this gene require 2.5 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_TerribleDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.2</displayOrderInCategory>
         <biostatMet>3</biostatMet>
         <statFactors>
             <EBSG_DeathrestEfficiency>0.40</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>0.40</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_SlowDeathrestSpeed</defName>
         <label>slow deathrest speed</label>
-        <description>Carriers of this gene require 1.66 times as much time to complete a period of deathresting, and recharge the Deathrest need at 60% speed.</description>
+        <description>Carriers of this gene require 1.66 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_BadDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.3</displayOrderInCategory>
         <biostatMet>2</biostatMet>
         <statFactors>
             <EBSG_DeathrestEfficiency>0.60</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>0.60</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_SlightlySlowDeathrestSpeed</defName>
         <label>slightly slow deathrest speed</label>
-        <description>Carriers of this gene require 1.33 times as much time to complete a period of deathresting, and recharge the Deathrest need at 80% speed.</description>
+        <description>Carriers of this gene require 1.33 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_BadDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.4</displayOrderInCategory>
         <biostatMet>1</biostatMet>
         <statFactors>
             <EBSG_DeathrestEfficiency>0.80</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>0.80</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_SlightlyFastDeathrestSpeed</defName>
         <label>slightly fast deathrest speed</label>
-        <description>Carriers of this gene require 0.80 times as much time to complete a period of deathresting, and recharge the Deathrest need at 125% speed.</description>
+        <description>Carriers of this gene require 0.80 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_DeathrestSpeed</iconPath>
         <displayOrderInCategory>666.5</displayOrderInCategory>
         <biostatMet>-1</biostatMet>
         <statFactors>
             <EBSG_DeathrestEfficiency>1.25</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>1.25</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_FastDeathrestSpeed</defName>
         <label>fast deathrest speed</label>
-        <description>Carriers of this gene require 0.67 times as much time to complete a period of deathresting, and recharge the Deathrest need at 150% speed.</description>
+        <description>Carriers of this gene require 0.67 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_DeathrestSpeed</iconPath>
         <displayOrderInCategory>666.6</displayOrderInCategory>
         <biostatMet>-2</biostatMet>
         <statFactors>
             <EBSG_DeathrestEfficiency>1.50</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>1.50</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_VeryFastDeathrestSpeed</defName>
         <label>very fast deathrest speed</label>
-        <description>Carriers of this gene require 0.57 times as much time to complete a period of deathresting, and recharge the Deathrest need at 175% speed.</description>
+        <description>Carriers of this gene require 0.57 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_DeathrestSpeed</iconPath>
         <displayOrderInCategory>666.7</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
         <biostatCpx>2</biostatCpx>
         <statFactors>
             <EBSG_DeathrestEfficiency>1.75</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>1.75</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_ExtremelyFastDeathrestSpeed</defName>
         <label>extremely fast deathrest speed</label>
-        <description>Carriers of this gene require 0.50 times as much time to complete a period of deathresting, and recharge the Deathrest need at 200% speed.</description>
+        <description>Carriers of this gene require 0.50 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.8</displayOrderInCategory>
         <biostatMet>-4</biostatMet>
         <biostatCpx>2</biostatCpx>
         <statFactors>
             <EBSG_DeathrestEfficiency>2.00</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>2.00</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_SuperFastDeathrestSpeed</defName>
         <label>super fast deathrest speed</label>
-        <description>Carriers of this gene require 0.50 times as much time to complete a period of deathresting, and recharge the Deathrest need at 225% speed.</description>
+        <description>Carriers of this gene require 0.50 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.9</displayOrderInCategory>
         <biostatMet>-5</biostatMet>
         <biostatCpx>3</biostatCpx>
         <statFactors>
             <EBSG_DeathrestEfficiency>2.25</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>2.25</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 
     <GeneDef ParentName="EBSG_DeathrestSpeedBase">
         <defName>EBSG_UnbelievablyFastDeathrestSpeed</defName>
         <label>unbelievably fast deathrest speed</label>
-        <description>Carriers of this gene require 0.40 times as much time to complete a period of deathresting, and recharge the Deathrest need at 250% speed.</description>
+        <description>Carriers of this gene require 0.40 times as much time to complete a period of deathresting.</description>
         <iconPath>EBSG/Gene_ExtremeDeathrestSpeed</iconPath>
         <displayOrderInCategory>667.0</displayOrderInCategory>
         <biostatMet>-6</biostatMet>
         <biostatCpx>3</biostatCpx>
         <statFactors>
             <EBSG_DeathrestEfficiency>2.50</EBSG_DeathrestEfficiency>
-            <EBSG_DeathrestRiseRate>2.50</EBSG_DeathrestRiseRate>
         </statFactors>
     </GeneDef>
 </Defs>
