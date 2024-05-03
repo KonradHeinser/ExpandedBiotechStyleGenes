@@ -62,7 +62,7 @@
     <GeneDef ParentName="EBSG_HumanlikeSlayerBase">
         <defName>EBSG_SomewhatGoodHumanlikeSlayer</defName>
         <label>somewhat good humanoid slayer</label>
-        <description>Carriers of this gene instinctively know some of the weak points of any humanoid they fight, making it easier to slay their enemies.</description>
+        <description>Carriers of this gene instinctively know some of the weak points of any humanlike enemy they fight, making it easier to slay their enemies.</description>
         <iconPath>EBSG/Gene_GoodHumanlikeSlayer</iconPath>
         <displayOrderInCategory>105</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -75,7 +75,7 @@
     <GeneDef ParentName="EBSG_HumanlikeSlayerBase">
         <defName>EBSG_GoodHumanlikeSlayer</defName>
         <label>good humanoid slayer</label>
-        <description>Carriers of this gene instinctively know a lot of the weak points of any humanoid they fight, making it easier to slay their enemies.</description>
+        <description>Carriers of this gene instinctively know a lot of the weak points of any humanlike enemy they fight, making it easier to slay their enemies.</description>
         <iconPath>EBSG/Gene_GoodHumanlikeSlayer</iconPath>
         <displayOrderInCategory>106</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -88,7 +88,7 @@
     <GeneDef ParentName="EBSG_HumanlikeSlayerBase">
         <defName>EBSG_VeryGoodHumanlikeSlayer</defName>
         <label>very good humanoid slayer</label>
-        <description>Carriers of this gene instinctively know most of the weak points of any humanoid they fight, making it easier to slay their enemies.</description>
+        <description>Carriers of this gene instinctively know most of the weak points of any humanlike enemy they fight, making it easier to slay their enemies.</description>
         <iconPath>EBSG/Gene_GoodHumanlikeSlayer</iconPath>
         <displayOrderInCategory>107</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
@@ -101,7 +101,7 @@
     <GeneDef ParentName="EBSG_HumanlikeSlayerBase">
         <defName>EBSG_ExtremelyGoodHumanlikeSlayer</defName>
         <label>extremely good humanoid slayer</label>
-        <description>Carriers of this gene instinctively know every weak point of any humanoid they fight, making it significantly easier to slay their enemies.</description>
+        <description>Carriers of this gene instinctively know every weak point of any humanlike enemy they fight, making it significantly easier to slay their enemies.</description>
         <iconPath>EBSG/Gene_ExtremelyGoodHumanlikeSlayer</iconPath>
         <displayOrderInCategory>108</displayOrderInCategory>
         <biostatCpx>2</biostatCpx>
@@ -114,7 +114,7 @@
     <GeneDef ParentName="EBSG_HumanlikeSlayerBase">
         <defName>EBSG_UnbelievablyGoodHumanlikeSlayer</defName>
         <label>unbelievably good humanoid slayer</label>
-        <description>Carriers of this gene instinctively know every weak point of any humanoid they fight and have the ability to predict where the humanoid will move next with a low accuracy rate, making it significantly easier to slay their enemies.\n\nAlite's note: Predictive ability doesn't really exist or do anything, it's just some fluff text that I use to be able to claim this gene makes complete sense.</description>
+        <description>Carriers of this gene instinctively know every weak point of any humanlike enemy they fight and have the ability to predict where the humanoid will move next with a low accuracy rate, making it significantly easier to slay their enemies.\n\nAlite's note: Predictive ability doesn't really exist or do anything, it's just some fluff text that I use to be able to claim this gene makes complete sense.</description>
         <iconPath>EBSG/Gene_ExtremelyGoodHumanlikeSlayer</iconPath>
         <displayOrderInCategory>109</displayOrderInCategory>
         <biostatCpx>3</biostatCpx>

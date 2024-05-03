@@ -23,7 +23,7 @@
     <GeneDef ParentName="EBSG_EntitySlayerBase" MayRequire="Ludeon.Rimworld.Anomaly">
         <defName>EBSG_ExtremelyBadEntitySlayer</defName>
         <label>extremely bad entity slayer</label>
-        <description>Carriers of this gene have significant difficulty killing other entities, either because of a special wiring in their brains to not take the lives of entities, or just general inexplicable physical incapability not yet explained by science.</description>
+        <description>Carriers of this gene have significant difficulty killing entities, either because of a special wiring in their brains to not take the lives of entities, or just general inexplicable physical incapability not yet explained by science.</description>
         <iconPath>EBSG/Gene_ExtremelyBadEntitySlayer</iconPath>
         <displayOrderInCategory>502</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -36,7 +36,7 @@
     <GeneDef ParentName="EBSG_EntitySlayerBase" MayRequire="Ludeon.Rimworld.Anomaly">
         <defName>EBSG_VeryBadEntitySlayer</defName>
         <label>very bad entity slayer</label>
-        <description>Carriers of this gene have major issues when trying to kill other entities, either because of a special wiring in their brains to not take the lives of entities, or just general inexplicable physical incapability not yet explained by science.</description>
+        <description>Carriers of this gene have major issues when trying to kill entities, either because of a special wiring in their brains to not take the lives of entities, or just general inexplicable physical incapability not yet explained by science.</description>
         <iconPath>EBSG/Gene_BadEntitySlayer</iconPath>
         <displayOrderInCategory>503</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
@@ -49,7 +49,7 @@
     <GeneDef ParentName="EBSG_EntitySlayerBase" MayRequire="Ludeon.Rimworld.Anomaly">
         <defName>EBSG_BadEntitySlayer</defName>
         <label>bad entity slayer</label>
-        <description>Carriers of this gene have issues when trying to kill other entities, either because of a special wiring in their brains to not take the lives of entities, or just general inexplicable physical incapability not yet explained by science.</description>
+        <description>Carriers of this gene have issues when trying to kill entities, either because of a special wiring in their brains to not take the lives of entities, or just general inexplicable physical incapability not yet explained by science.</description>
         <iconPath>EBSG/Gene_BadEntitySlayer</iconPath>
         <displayOrderInCategory>504</displayOrderInCategory>
         <biostatCpx>1</biostatCpx>
