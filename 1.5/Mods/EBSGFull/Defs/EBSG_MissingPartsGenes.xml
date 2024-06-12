@@ -3,7 +3,7 @@
     <GeneCategoryDef>
         <defName>EBSG_BodyParts</defName>
         <label>EBSG - Body Parts</label>
-        <displayPriorityInXenotype>501</displayPriorityInXenotype>
+        <displayPriorityInXenotype>500.071</displayPriorityInXenotype>
     </GeneCategoryDef>
 
     <GeneDef Abstract="True" Name="EBSG_MissingPartBase">

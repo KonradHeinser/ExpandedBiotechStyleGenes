@@ -3,7 +3,7 @@
     <GeneCategoryDef>
         <defName>EBSG_RandomBodyParts</defName>
         <label>EBSG - Gambling Body Parts Away</label>
-        <displayPriorityInXenotype>502</displayPriorityInXenotype>
+        <displayPriorityInXenotype>500.072</displayPriorityInXenotype>
     </GeneCategoryDef>
 
     <GeneDef Abstract="True" Name="EBSG_RandomPartBase">
