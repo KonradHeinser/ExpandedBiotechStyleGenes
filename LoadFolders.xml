@@ -17,6 +17,7 @@
         <li IfModActive="SuperheroGenesBase.Mod">1.5/Mods/SuperHeroGenes</li>
         <li IfModActive="SA.Cryoweapons">1.5/Mods/CryoWeapons</li>
 		<li IfModActive="EBSG.Framework">1.5/Mods/EBSGFull</li>
+		<li IfModActive="Ludeon.Rimworld.Anomaly">1.5/Mods/Anomaly</li>
 	</v1.5>
 </loadFolders>
 
