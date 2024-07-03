@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_Inquisitor" Abstract="True">
+        <displayCategory>EBSG_AnomalyGenes</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Inquisitor</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_ExtremeSkeptic</defName>
+        <label>extreme skeptic</label>
+        <description>Carriers of this gene instinctively doubt that there is a such thing as an "interdimensional horror" or that these "entities" are anything more than a weird animal. This instinctive belief is so entrenched in their mind that they refuse to even entertain the idea of studying them.\n\nWARNING: Because of how the dark study code is set up, I can't actually disable it specifically. Make sure to disable it in the work settings because this will permanently set the pawn's study rate and efficiency to 0.1%.</description>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExtremeSkeptic</iconPath>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <EntityStudyRate>0</EntityStudyRate>
+            <StudyEfficiency>0</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_Skeptic</defName>
+        <label>skeptic</label>
+        <description>Carriers of this gene instinctively doubt that there is a such thing as an "interdimensional horror" or that these "entities" are anything more than a weird animal. This instinctive belief makes it harder for them study such beings as a part of their mind is distracted searching for a more natural explanation.</description>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Skeptic</iconPath>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <EntityStudyRate>0.5</EntityStudyRate>
+            <StudyEfficiency>0.8</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_DecentInquisitor</defName>
+        <label>decent inquisitor</label>
+        <description>Carriers of this gene instinctively seek to understand beings from the void, making them slightly better at studying anomalies.</description>
+        <displayOrderInCategory>3</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Inquisitor</iconPath>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <EntityStudyRate>1.25</EntityStudyRate>
+            <StudyEfficiency>1.1</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_Inquisitor</defName>
+        <label>inquisitor</label>
+        <description>Carriers of this gene instinctively seek to understand beings from the void, making them better at studying anomalies.</description>
+        <displayOrderInCategory>4</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Inquisitor</iconPath>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <EntityStudyRate>1.5</EntityStudyRate>
+            <StudyEfficiency>1.2</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_GoodInquisitor</defName>
+        <label>good inquisitor</label>
+        <description>Carriers of this gene instinctively seek to understand beings from the void, making them a lot better at studying anomalies.</description>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Inquisitor</iconPath>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>1.75</EntityStudyRate>
+            <StudyEfficiency>1.3</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_ExceptionalInquisitor</defName>
+        <label>exceptional inquisitor</label>
+        <description>Carriers of this gene instinctively seek to understand beings from the void, making them exceptionally good at studying anomalies.</description>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalInquisitor</iconPath>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>2.0</EntityStudyRate>
+            <StudyEfficiency>1.4</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_SuperInquisitor</defName>
+        <label>super inquisitor</label>
+        <description>Carriers of this gene instinctively seek to understand beings from the void, making them super good at studying anomalies.</description>
+        <displayOrderInCategory>7</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalInquisitor</iconPath>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>2.25</EntityStudyRate>
+            <StudyEfficiency>1.5</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor">
+        <defName>EBSG_AmazingInquisitor</defName>
+        <label>amazing inquisitor</label>
+        <description>Carriers of this gene are so good at figuring out what makes beings from the void tick that it could some wonder if the carrier is also from the void.</description>
+        <displayOrderInCategory>8</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalInquisitor</iconPath>
+        <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>2.5</EntityStudyRate>
+            <StudyEfficiency>1.6</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <!--Thrown into this mod instead of the archite mod this time because it felt more efficient in terms of load time. 
+    I'm assuming Anomaly Genes will be the ones least used, so instead of doing the check in EAG, I'm doing a check for EAG here.-->
+    <GeneDef ParentName="EBSG_Inquisitor" MayRequire="EBSG.Archite">
+        <defName>EBSG_MinorArchiteEnhancedInquisitor</defName>
+        <label>minor archite enhanced inquisitor</label>
+        <description>Carriers of this gene have a small number of archites in their brain that make it easier to analyze beings from the void.</description>
+        <displayOrderInCategory>9</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Inquisitor</iconPath>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>2.0</EntityStudyRate>
+            <StudyEfficiency>1.4</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor" MayRequire="EBSG.Archite">
+        <defName>EBSG_ArchiteEnhancedInquisitor</defName>
+        <label>archite enhanced inquisitor</label>
+        <description>Carriers of this gene have archites in their brain that make it easier to analyze beings from the void.</description>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalInquisitor</iconPath>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>3.0</EntityStudyRate>
+            <StudyEfficiency>1.8</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Inquisitor" MayRequire="EBSG.Archite">
+        <defName>EBSG_MajorArchiteEnhancedInquisitor</defName>
+        <label>major archite enhanced inquisitor</label>
+        <description>Carriers of this gene have a large number of archites in their brain that make it easier to analyze beings from the void.</description>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalInquisitor</iconPath>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <EntityStudyRate>4.0</EntityStudyRate>
+            <StudyEfficiency>2.2</StudyEfficiency>
+        </statFactors>
+    </GeneDef>
+</Defs>

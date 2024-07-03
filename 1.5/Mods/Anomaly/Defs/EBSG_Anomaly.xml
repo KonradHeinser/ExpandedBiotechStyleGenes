@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneCategoryDef>
+        <defName>EBSG_AnomalyGenes</defName>
+        <label>EBSG - Anomaly</label>
+        <displayPriorityInXenotype>429.97</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef MayRequire="EBSG.Framework">
+        <defName>EBSG_Inhuman</defName>
+        <label>inhuman</label>
+        <description>Carriers of this gene have always been strangely disconnected from the world and the people around them. It's as though something is obscuring their perception of everything around them, leaving a mostly empty shell behind.\n\nBecause this is an archite gene, it will be impossible to inherit or extract without the use of other mods that revamp the inheritance system.</description>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <displayOrderInCategory>-2</displayOrderInCategory>
+        <iconPath>EBSG/Gene_Inhuman</iconPath>
+        <displayCategory>EBSG_AnomalyGenes</displayCategory>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <customEffectDescriptions>
+            <li>The pawn starts with the inhumanization hediff.</li>
+            <li>Removal of this gene will always result in inhumanized being removed, even if the pawn originally received it from another source.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>void</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_InherentVoid</li>
+        </exclusionTags>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply><li><hediff>Inhumanized</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef MayRequire="EBSG.Framework">
+        <defName>EBSG_VoidBorn</defName>
+        <label>void born</label>
+        <description>Carriers of this gene inherently have a piece of the void inside them, and that piece guides everything they do with some minor side effects. It is usually easy to recognize carriers of the void born gene as there are few individuals with gray hair and eyes.\n\nIf you have a mod that changes the effects of void touched, this will usually use that version of the hediff instead of the vanilla version.\n\nBecause this is an archite gene, it will be impossible to inherit or extract without the use of other mods that revamp the inheritance system.</description>
+        <biostatArc>4</biostatArc>
+        <biostatCpx>12</biostatCpx>
+        <displayOrderInCategory>-1</displayOrderInCategory>
+        <iconPath>EBSG/Gene_VoidBorn</iconPath>
+        <displayCategory>EBSG_AnomalyGenes</displayCategory>
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <customEffectDescriptions>
+            <li>The pawn gains both the inhumanization hediff and the void touched hediff.</li>
+            <li>Removal of this gene will always result in those hediffs being removed, even if the pawn originally received one of them from another source.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>voidborne</symbol></li>
+                <li><symbol>void walker</symbol></li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li><symbol>void</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_InherentVoid</li>
+        </exclusionTags>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
+                    <li><hediff>Inhumanized</hediff></li>
+                    <li><hediff>VoidTouched</hediff></li>
+                </hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>
