@@ -43,13 +43,19 @@
         <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
-                    <value><hideGene>true</hideGene></value>
+                <li Class="PatchOperationConditional">
+                    <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]</xpath>
+                    <match Class="PatchOperationAdd">
+                        <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                        <value><hideGene>true</hideGene></value>
+                    </match>
                 </li>
-                <li Class="PatchOperationReplace">
+                <li Class="PatchOperationConditional">
                     <xpath>Defs/XenotypeDef/genes/li[text()="VRE_Hemophiliac"]</xpath>
-                    <value><li>EBSG_ExtremeHemophilia</li></value>  
+                    <match Class="PatchOperationReplace">
+                        <xpath>Defs/XenotypeDef/genes/li[text()="VRE_Hemophiliac"]</xpath>
+                        <value><li>EBSG_ExtremeHemophilia</li></value>  
+                    </match>
                 </li>
             </operations>
         </match>
