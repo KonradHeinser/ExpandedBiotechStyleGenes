@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef Abstract="true" Name="EBSG_MeditationFocusBase">
+    <GeneDef Abstract="true" Name="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <displayCategory>Psychic</displayCategory>
         <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
@@ -8,7 +8,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef Abstract="true" Name="EBSG_EntropyMaxBase">
+    <GeneDef Abstract="true" Name="EBSG_EntropyMaxBase" MayRequire="Ludeon.Rimworld.Royalty">
         <displayCategory>Psychic</displayCategory>
         <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
@@ -16,7 +16,7 @@
         </exclusionTags>
     </GeneDef>
 
-    <GeneDef Abstract="true" Name="EBSG_EntropyRecoveryBase">
+    <GeneDef Abstract="true" Name="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <displayCategory>Psychic</displayCategory>
         <prerequisite>EBSG_InnatePsychicAmplifier</prerequisite>
         <exclusionTags>
@@ -25,7 +25,7 @@
     </GeneDef>
 
         <!--Genes start at 310 to make it extremely unlikely that any genes will intersect them-->
-    <GeneDef>
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_InnatePsychicAmplifier</defName>
         <label>innate psylink</label>
         <iconPath>Things/Item/Special/PsylinkNeuroformer</iconPath>
@@ -54,7 +54,7 @@
 <!--Now, seeing InnatePsychicInsulation may make you think, why am I even in this code? It may also make you think, is he going to make a Psychic Insulator implant? 
 The answers are 1) for something I'm sure, and 2) see Superhero Genes - Deus Ex Machina. If you see this before it comes out, welcome to spoiler island!
 At the time of typing (October 8, 2023), it's been a background work-in-progress for two months. A "do it while the boss isn't watching and you have no work" thing-->
-    <GeneDef> 
+    <GeneDef MayRequire="Ludeon.Rimworld.Royalty"> 
         <defName>EBSG_InnatePsychicInsulation</defName>
         <label>psychic insulation</label>
         <iconPath>EBSG/Gene_InnatePsychicInsulation</iconPath>

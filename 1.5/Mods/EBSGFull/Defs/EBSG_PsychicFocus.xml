@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_TerribleMeditationFocus</defName>
         <label>terrible focus gain</label>
         <iconPath>EBSG/Gene_TerribleMeditationFocus</iconPath>
@@ -12,7 +12,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_BadMeditationFocus</defName>
         <label>bad focus gain</label>
         <iconPath>EBSG/Gene_BadMeditationFocus</iconPath>
@@ -24,7 +24,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_MinorMeditationFocus</defName>
         <label>minor focus gain</label>
         <iconPath>EBSG/Gene_MeditationFocus</iconPath>
@@ -36,7 +36,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_MeditationFocus</defName>
         <label>focus gain</label>
         <iconPath>EBSG/Gene_MeditationFocus</iconPath>
@@ -48,7 +48,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_MajorMeditationFocus</defName>
         <label>major focus gain</label>
         <iconPath>EBSG/Gene_MeditationFocus</iconPath>
@@ -61,7 +61,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_ExtremeMeditationFocus</defName>
         <label>extreme focus gain</label>
         <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
@@ -74,7 +74,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_SuperMeditationFocus</defName>
         <label>super focus gain</label>
         <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>
@@ -87,7 +87,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_MeditationFocusBase">
+    <GeneDef ParentName="EBSG_MeditationFocusBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_HyperMeditationFocus</defName>
         <label>hyper focus gain</label>
         <iconPath>EBSG/Gene_ExtremeMeditationFocus</iconPath>

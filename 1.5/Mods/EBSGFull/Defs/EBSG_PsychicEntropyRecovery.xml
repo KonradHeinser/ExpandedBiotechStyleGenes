@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_TerribleEntropyRecovery</defName>
         <label>terrible heat recovery</label>
         <iconPath>EBSG/Gene_TerribleEntropyRecovery</iconPath>
@@ -12,7 +12,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_BadEntropyRecovery</defName>
         <label>bad heat recovery</label>
         <iconPath>EBSG/Gene_BadEntropyRecovery</iconPath>
@@ -24,7 +24,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_MinorEntropyRecovery</defName>
         <label>minor heat recovery</label>
         <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
@@ -36,7 +36,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_EntropyRecovery</defName>
         <label>heat recovery</label>
         <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
@@ -48,7 +48,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_MajorEntropyRecovery</defName>
         <label>major heat recovery</label>
         <iconPath>EBSG/Gene_EntropyRecovery</iconPath>
@@ -61,7 +61,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_ExtremeEntropyRecovery</defName>
         <label>extreme heat recovery</label>
         <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
@@ -74,7 +74,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_SuperEntropyRecovery</defName>
         <label>super heat recovery</label>
         <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
@@ -87,7 +87,7 @@
         </statFactors>
     </GeneDef>
 
-    <GeneDef ParentName="EBSG_EntropyRecoveryBase">
+    <GeneDef ParentName="EBSG_EntropyRecoveryBase" MayRequire="Ludeon.Rimworld.Royalty">
         <defName>EBSG_HyperEntropyRecovery</defName>
         <label>hyper heat recovery</label>
         <iconPath>EBSG/Gene_ExtremeEntropyRecovery</iconPath>
