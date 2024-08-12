@@ -10,7 +10,7 @@
     <GeneDef ParentName="EBSG_BiosculptingSpeed" MayRequire="Ludeon.Rimworld.Ideology">
         <defName>EBSG_SlowBiosculpting</defName>
         <label>slow biosculpting speed</label>
-        <iconPath>EBSG/Gene_SlowBiosculptingSpeed</iconPath>
+        <iconPath>EBSG/Gene_VerySlowBiosculptingSpeed</iconPath>
         <description>Carriers of this gene require a lot more time in a biosculpter to be affected by it.</description>
         <displayOrderInCategory>200.1</displayOrderInCategory>
         <biostatMet>2</biostatMet>
