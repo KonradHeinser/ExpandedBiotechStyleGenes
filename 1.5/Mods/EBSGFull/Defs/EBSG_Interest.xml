@@ -11,7 +11,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Shooting</defName>
         <label>shooting interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Shooting/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Shooting/PassionAdd</iconPath>
         <displayOrderInCategory>1.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Shooting</li>
@@ -31,7 +31,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Melee</defName>
         <label>melee interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Melee/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Melee/PassionAdd</iconPath>
         <displayOrderInCategory>2.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Melee</li>
@@ -51,7 +51,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Construction</defName>
         <label>construction interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Construction/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Construction/PassionAdd</iconPath>
         <displayOrderInCategory>3.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Construction</li>
@@ -71,7 +71,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Mining</defName>
         <label>mining interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Mining/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
         <displayOrderInCategory>4.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Mining</li>
@@ -91,7 +91,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Cooking</defName>
         <label>cooking interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Cooking/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Cooking/PassionAdd</iconPath>
         <displayOrderInCategory>5.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Cooking</li>
@@ -111,7 +111,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Plants</defName>
         <label>plants interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Plants/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Plants/PassionAdd</iconPath>
         <displayOrderInCategory>6.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Plants</li>
@@ -131,7 +131,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Animals</defName>
         <label>animals interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Animals/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Animals/PassionAdd</iconPath>
         <displayOrderInCategory>7.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Animals</li>
@@ -151,7 +151,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Crafting</defName>
         <label>crafting interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Crafting/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Crafting/PassionAdd</iconPath>
         <displayOrderInCategory>8.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Crafting</li>
@@ -171,7 +171,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Artistic</defName>
         <label>artistic interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Artistic/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Artistic/PassionAdd</iconPath>
         <displayOrderInCategory>9.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Artistic</li>
@@ -191,7 +191,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Medicine</defName>
         <label>medical interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Medicine/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Medicine/PassionAdd</iconPath>
         <displayOrderInCategory>10.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Medicine</li>
@@ -211,7 +211,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Social</defName>
         <label>social interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Social/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Social/PassionAdd</iconPath>
         <displayOrderInCategory>11.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Social</li>
@@ -231,7 +231,7 @@
     <GeneDef ParentName="EBSG_Interest">
         <defName>EBSG_Interest_Intellectual</defName>
         <label>intellectual interest</label>
-        <iconPath>UI/Icons/Genes/Skills/Intellectual/Strong</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Intellectual/PassionAdd</iconPath>
         <displayOrderInCategory>12.3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Intellectual</li>

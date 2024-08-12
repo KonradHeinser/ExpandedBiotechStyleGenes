@@ -17,7 +17,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Shooting</defName>
         <label>passionless shooting</label>
-        <iconPath>UI/Icons/Genes/Skills/Shooting/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Shooting/PassionDrop</iconPath>
         <displayOrderInCategory>1</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Shooting</li>
@@ -38,7 +38,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Melee</defName>
         <label>passionless melee</label>
-        <iconPath>UI/Icons/Genes/Skills/Melee/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Melee/PassionDrop</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Melee</li>
@@ -59,7 +59,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Construction</defName>
         <label>passionless construction</label>
-        <iconPath>UI/Icons/Genes/Skills/Construction/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Construction/PassionDrop</iconPath>
         <displayOrderInCategory>3</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Construction</li>
@@ -80,7 +80,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Mining</defName>
         <label>passionless mining</label>
-        <iconPath>UI/Icons/Genes/Skills/Mining/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Mining/PassionDrop</iconPath>
         <displayOrderInCategory>4</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Mining</li>
@@ -101,7 +101,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Cooking</defName>
         <label>passionless cooking</label>
-        <iconPath>UI/Icons/Genes/Skills/Cooking/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Cooking/PassionDrop</iconPath>
         <displayOrderInCategory>5</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Cooking</li>
@@ -122,7 +122,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Plants</defName>
         <label>passionless plants</label>
-        <iconPath>UI/Icons/Genes/Skills/Plants/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Plants/PassionDrop</iconPath>
         <displayOrderInCategory>6</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Plants</li>
@@ -143,7 +143,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Animals</defName>
         <label>passionless animals</label>
-        <iconPath>UI/Icons/Genes/Skills/Animals/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Animals/PassionDrop</iconPath>
         <displayOrderInCategory>7</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Animals</li>
@@ -164,7 +164,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Crafting</defName>
         <label>passionless crafting</label>
-        <iconPath>UI/Icons/Genes/Skills/Crafting/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Crafting/PassionDrop</iconPath>
         <displayOrderInCategory>8</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Crafting</li>
@@ -185,7 +185,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Artistic</defName>
         <label>passionless artistic</label>
-        <iconPath>UI/Icons/Genes/Skills/Artistic/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Artistic/PassionDrop</iconPath>
         <displayOrderInCategory>9</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Artistic</li>
@@ -206,7 +206,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Medicine</defName>
         <label>passionless medical</label>
-        <iconPath>UI/Icons/Genes/Skills/Medicine/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Medicine/PassionDrop</iconPath>
         <displayOrderInCategory>10</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Medicine</li>
@@ -227,7 +227,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Social</defName>
         <label>passionless social</label>
-        <iconPath>UI/Icons/Genes/Skills/Social/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Social/PassionDrop</iconPath>
         <displayOrderInCategory>11</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Social</li>
@@ -248,7 +248,7 @@
     <GeneDef ParentName="EBSG_NoPassion">
         <defName>EBSG_NoPassion_Intellectual</defName>
         <label>passionless intellectual</label>
-        <iconPath>UI/Icons/Genes/Skills/Intellectual/Terrible</iconPath>
+        <iconPath>UI/Icons/Genes/Skills/Intellectual/PassionDrop</iconPath>
         <displayOrderInCategory>12</displayOrderInCategory>
         <exclusionTags>
             <li>EBSG_Passion_Intellectual</li>
