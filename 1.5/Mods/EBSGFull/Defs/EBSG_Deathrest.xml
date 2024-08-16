@@ -11,7 +11,7 @@
         <defName>EBSG_AbysmalDeathrestSpeed</defName>
         <label>abysmal deathrest speed</label>
         <description>Carriers of this gene require 5 times as much time to complete a period of deathresting.</description>
-        <iconPath>EBSG/Gene_AbysmalDeathrestSpeed</iconPath>
+        <iconPath>EBSG/Gene_TerribleDeathrestSpeed</iconPath>
         <displayOrderInCategory>666.1</displayOrderInCategory>
         <biostatMet>4</biostatMet>
         <biostatCpx>2</biostatCpx>
