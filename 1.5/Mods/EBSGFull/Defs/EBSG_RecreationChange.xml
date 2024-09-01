@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Abstract="True" Name="EBSG_RecreationChangeBase">
+        <displayCategory>EBSG_NeedRateChange</displayCategory>
+        <exclusionTags>
+            <li>EBSG_RecreationChange</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_SuperGloominess</defName>
+		<label>super gloominess</label>
+		<description>Carriers of this gene are constantly feeling gloomy, leading them need to spend a super long time fulfilling their recreation need.</description>
+		<iconPath>EBSG/Gene_ExtremeGloominess</iconPath>
+		<statFactors>
+			<EBSG_JoyRiseRate>0.5</EBSG_JoyRiseRate>
+		</statFactors>
+		<displayOrderInCategory>20.2</displayOrderInCategory>
+		<biostatMet>5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_ExtremeGloominess</defName>
+		<label>extremely gloominess</label>
+		<description>Carriers of this gene are constantly feeling gloomy, leading them need to spend an extremely long time fulfilling their recreation need.</description>
+		<iconPath>EBSG/Gene_ExtremeGloominess</iconPath>
+		<statFactors>
+			<EBSG_JoyRiseRate>0.6</EBSG_JoyRiseRate>
+		</statFactors>
+		<displayOrderInCategory>20.3</displayOrderInCategory>
+		<biostatMet>4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_MajorGloominess</defName>
+		<label>major gloominess</label>
+		<description>Carriers of this gene are constantly feeling gloomy, leading them need to spend a much longer amount of time fulfilling their recreation need.</description>
+		<iconPath>EBSG/Gene_Gloominess</iconPath>
+		<statFactors>
+			<EBSG_JoyRiseRate>0.7</EBSG_JoyRiseRate>
+		</statFactors>
+		<displayOrderInCategory>20.4</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_Gloominess</defName>
+		<label>gloominess</label>
+		<description>Carriers of this gene are constantly feeling gloomy, leading them need to spend a longer amount of time fulfilling their recreation need.</description>
+		<iconPath>EBSG/Gene_Gloominess</iconPath>
+		<statFactors>
+			<EBSG_JoyRiseRate>0.8</EBSG_JoyRiseRate>
+		</statFactors>
+		<displayOrderInCategory>20.5</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_MinorGloominess</defName>
+		<label>minor gloominess</label>
+		<description>Carriers of this gene are constantly feeling gloomy, leading them need to spend a slightly longer amount of time fulfilling their recreation need.</description>
+		<iconPath>EBSG/Gene_Gloominess</iconPath>
+		<statFactors>
+			<EBSG_JoyRiseRate>0.9</EBSG_JoyRiseRate>
+		</statFactors>
+		<displayOrderInCategory>20.6</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_MinorJoviality</defName>
+		<label>minor joviality</label>
+		<description>Carriers of this gene are more light hearted than most, causing them to take a little longer to feel dissatisfied.</description>
+		<iconPath>EBSG/Gene_Joviality</iconPath>
+		<statFactors>
+            <JoyFallRateFactor>0.9</JoyFallRateFactor>
+		</statFactors>
+		<displayOrderInCategory>20.7</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_Joviality</defName>
+		<label>joviality</label>
+		<description>Carriers of this gene are more light hearted than most, causing them to take longer to feel dissatisfied.</description>
+		<iconPath>EBSG/Gene_Joviality</iconPath>
+		<statFactors>
+            <JoyFallRateFactor>0.75</JoyFallRateFactor>
+		</statFactors>
+		<displayOrderInCategory>20.8</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_MajorJoviality</defName>
+		<label>major joviality</label>
+		<description>Carriers of this gene are more light hearted than most, causing them to take longer to feel dissatisfied.</description>
+		<iconPath>EBSG/Gene_Joviality</iconPath>
+		<statFactors>
+            <JoyFallRateFactor>0.3</JoyFallRateFactor>
+		</statFactors>
+		<displayOrderInCategory>20.9</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_ExtremeJoviality</defName>
+		<label>extreme joviality</label>
+		<description>Carriers of this gene are more light hearted than most, causing them to take an extremely long time to feel dissatisfied.</description>
+		<iconPath>EBSG/Gene_ExtremeJoviality</iconPath>
+		<statFactors>
+            <JoyFallRateFactor>0.4</JoyFallRateFactor>
+		</statFactors>
+		<displayOrderInCategory>21.0</displayOrderInCategory>
+		<biostatMet>-4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_SuperJoviality</defName>
+		<label>super joviality</label>
+		<description>Carriers of this gene are more light hearted than most, causing them to take a super long time to feel dissatisfied.</description>
+		<iconPath>EBSG/Gene_ExtremeJoviality</iconPath>
+		<statFactors>
+            <JoyFallRateFactor>0.2</JoyFallRateFactor>
+		</statFactors>
+		<displayOrderInCategory>21.1</displayOrderInCategory>
+		<biostatMet>-5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_RecreationChangeBase">
+		<defName>EBSG_HyperJoviality</defName>
+		<label>hyper joviality</label>
+		<description>Carriers of this gene do not feel require special activities to be content, leading them to never suffer from the negative effects of recreation, while also gaining a small constant mood boost.\n\nWhile I did not encounter any issues arising from completely disabling the recreation need, please be aware that this may have unintended side effects.</description>
+		<iconPath>EBSG/Gene_ExtremeJoviality</iconPath>
+		<displayOrderInCategory>21.2</displayOrderInCategory>
+		<biostatMet>-6</biostatMet>
+		<disablesNeeds>
+			<li>Joy</li>
+		</disablesNeeds>
+	</GeneDef>
+
+	<ThoughtDef>
+		<defName>EBSG_HyperJoviality</defName>
+		<workerClass>ThoughtWorker_AlwaysActive</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<requiredGenes>
+		  	<li>EBSG_HyperJoviality</li>
+		</requiredGenes>
+		<stages>
+			<li>
+				<label>hyper jovial</label>
+				<description>Natural bonus from the hyper joviality gene.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

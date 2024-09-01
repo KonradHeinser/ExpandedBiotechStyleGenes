@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Abstract="True" Name="EBSG_BeautyChangeBase">
+        <displayCategory>EBSG_NeedRateChange</displayCategory>
+        <exclusionTags>
+            <li>EBSG_BeautyChange</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_SuperAesthetism</defName>
+		<label>super aesthetism</label>
+		<description>Carriers of this gene are constantly focusing on living in beautiful environments, leading them to become dissatisfied with the surrounding beauty super quickly while also taking longer than most to feel happy about the appearance of the area around them.</description>
+		<iconPath>EBSG/Gene_ExtremeAesthetism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>0.5</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>2.0</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.2</displayOrderInCategory>
+		<biostatMet>5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_ExtremeAesthetism</defName>
+		<label>extremely aesthetism</label>
+		<description>Carriers of this gene are constantly focusing on living in beautiful environments, leading them to become dissatisfied with the surrounding beauty extremely quickly while also taking an extremely long time to feel happy about the appearance of the area around them compared to normal.</description>
+		<iconPath>EBSG/Gene_ExtremeAesthetism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>0.6</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>1.8</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.3</displayOrderInCategory>
+		<biostatMet>4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_MajorAesthetism</defName>
+		<label>major aesthetism</label>
+		<description>Carriers of this gene are constantly focusing on living in beautiful environments, leading them to become dissatisfied with the surrounding beauty much faster than normal while also taking a lot longer than most to feel happy about the appearance of the area around them.</description>
+		<iconPath>EBSG/Gene_Aesthetism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>0.7</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>1.6</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.4</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_Aesthetism</defName>
+		<label>aesthetism</label>
+		<description>Carriers of this gene are constantly focusing on living in beautiful environments, leading them to become dissatisfied with the surrounding beauty faster than normal while also taking longer than most to feel happy about the appearance of the area around them.</description>
+		<iconPath>EBSG/Gene_Aesthetism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>0.8</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>1.4</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.5</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_MinorAesthetism</defName>
+		<label>minor aesthetism</label>
+		<description>Carriers of this gene are constantly focusing on living in beautiful environments, leading them to become dissatisfied with the surrounding beauty a little faster than normal while also taking a little bit longer than most to feel happy about the appearance of the area around them.</description>
+		<iconPath>EBSG/Gene_Aesthetism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>0.9</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>1.2</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.6</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_MinorPhilisthinism</defName>
+		<label>minor philisthinism</label>
+		<description>Carriers of this gene do not feel as concerned about beautiful environments compared to most, causing them to recover from being in an ugly environment a little faster while also taking longer to develop a negative opinion about said environment.</description>
+		<iconPath>EBSG/Gene_Philisthinism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>1.2</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>0.9</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.7</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_Philisthinism</defName>
+		<label>philisthinism</label>
+		<description>Carriers of this gene do not feel as concerned about beautiful environments compared to most, causing them to recover from being in an ugly environment faster while also taking longer to develop a negative opinion about said environment.</description>
+		<iconPath>EBSG/Gene_Philisthinism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>1.4</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>0.75</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.8</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_MajorPhilisthinism</defName>
+		<label>major philisthinism</label>
+		<description>Carriers of this gene do not feel as concerned about beautiful environments compared to most, causing them to recover from being in an ugly environment a lot faster while also taking longer to develop a negative opinion about said environment.</description>
+		<iconPath>EBSG/Gene_Philisthinism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>1.6</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>0.6</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>10.9</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_ExtremePhilisthinism</defName>
+		<label>extreme philisthinism</label>
+		<description>Carriers of this gene do not feel as concerned about beautiful environments compared to most, causing them to recover from being in an ugly environment extremely fast while also taking longer to develop a negative opinion about said environment.</description>
+		<iconPath>EBSG/Gene_ExtremePhilisthinism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>1.8</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>0.4</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>11.0</displayOrderInCategory>
+		<biostatMet>-4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_SuperPhilisthinism</defName>
+		<label>super philisthinism</label>
+		<description>Carriers of this gene do not feel as concerned about beautiful environments compared to most, causing them to recover from being in an ugly environment super fast while also taking longer to develop a negative opinion about said environment.</description>
+		<iconPath>EBSG/Gene_ExtremePhilisthinism</iconPath>
+		<statFactors>
+			<EBSG_BeautyRiseRate>2.0</EBSG_BeautyRiseRate>
+            <EBSG_BeautyFallRate>0.2</EBSG_BeautyFallRate>
+		</statFactors>
+		<displayOrderInCategory>11.1</displayOrderInCategory>
+		<biostatMet>-5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_BeautyChangeBase">
+		<defName>EBSG_HyperPhilisthinism</defName>
+		<label>hyper philisthinism</label>
+		<description>Carriers of this gene feel completely indifferent about things like artwork, preventing them from ever gaining negative or positive thoughts about their surroundings.\n\nWhile I did not encounter any issues arising from completely disabling the beauty need, please keep in mind that this may have unintended side effects.</description>
+		<iconPath>EBSG/Gene_ExtremePhilisthinism</iconPath>
+		<displayOrderInCategory>11.2</displayOrderInCategory>
+		<biostatMet>-6</biostatMet>
+		<disablesNeeds>
+			<li>Beauty</li>
+		</disablesNeeds>
+	</GeneDef>
+</Defs>
