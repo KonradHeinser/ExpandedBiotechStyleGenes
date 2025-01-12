@@ -30,7 +30,12 @@
                     <li>PlantFoodRaw</li>
                     <li>AnimalProductRaw</li>
                     <li>MeatRaw</li>
+                    <li>CorpsesAnimal</li>
+                    <li MayRequire="Ludeon.Rimworld.Anomaly">CorpsesEntity</li>
                 </validCategories>
+                <validThings>
+                    <li>Corpse_Human</li>
+                </validThings>
             </li>
 	    </modExtensions>
     </GeneDef>
@@ -55,7 +60,15 @@
                 <dependencyLabel>raw food</dependencyLabel>
                 <validCategories>
                     <li>FoodRaw</li>
+                    <li>PlantFoodRaw</li>
+                    <li>AnimalProductRaw</li>
+                    <li>MeatRaw</li>
+                    <li>CorpsesAnimal</li>
+                    <li MayRequire="Ludeon.Rimworld.Anomaly">CorpsesEntity</li>
                 </validCategories>
+                <validThings>
+                    <li>Corpse_Human</li>
+                </validThings>
             </li>
 	    </modExtensions>
     </GeneDef>
@@ -77,7 +90,12 @@
                 <dependencyLabel>meat</dependencyLabel>
                 <validCategories>
                     <li>MeatRaw</li>
+                    <li>CorpsesAnimal</li>
+                    <li MayRequire="Ludeon.Rimworld.Anomaly">CorpsesEntity</li>
                 </validCategories>
+                <validThings>
+                    <li>Corpse_Human</li>
+                </validThings>
             </li>
 	    </modExtensions>
     </GeneDef>
@@ -99,7 +117,12 @@
                 <dependencyLabel>meat</dependencyLabel>
                 <validCategories>
                     <li>MeatRaw</li>
+                    <li>CorpsesAnimal</li>
+                    <li MayRequire="Ludeon.Rimworld.Anomaly">CorpsesEntity</li>
                 </validCategories>
+                <validThings>
+                    <li>Corpse_Human</li>
+                </validThings>
             </li>
 	    </modExtensions>
     </GeneDef>
