@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Abstract="True" Name="EBSG_KillThirstChangeBase">
+        <displayCategory>Violence</displayCategory>
+		<prerequisite>KillThirst</prerequisite>
+        <exclusionTags>
+            <li>EBSG_KillThirstChange</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_SuperMurderous</defName>
+		<label>super murderous</label>
+		<description>Carriers of this gene are even more prone to murderous tendencies than normal, causing them to feel the murderous itch super fast compared to normal. Any time is a killer time if you're stabby enough.</description>
+		<iconPath>EBSG/Gene_ExtremeMurderous</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>2.0</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.2</displayOrderInCategory>
+		<biostatMet>5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_ExtremeMurderous</defName>
+		<label>extremely murderous</label>
+		<description>Carriers of this gene are even more prone to murderous tendencies than normal, causing them to feel the murderous itch extremely fast compared to normal.</description>
+		<iconPath>EBSG/Gene_ExtremeMurderous</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>1.8</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.3</displayOrderInCategory>
+		<biostatMet>4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_MajorMurderous</defName>
+		<label>major murderous</label>
+		<description>Carriers of this gene are even more prone to murderous tendencies than normal, causing them to feel the murderous itch much faster than normal.</description>
+		<iconPath>EBSG/Gene_Murderous</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>1.6</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.4</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_Murderous</defName>
+		<label>murderous</label>
+		<description>Carriers of this gene are even more prone to murderous tendencies than normal, causing them to feel the murderous itch faster than normal.</description>
+		<iconPath>EBSG/Gene_Murderous</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>1.4</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.5</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_MinorMurderous</defName>
+		<label>minor murderous</label>
+		<description>Carriers of this gene are even more prone to murderous tendencies than normal, causing them to feel the murderous itch a little faster than normal.</description>
+		<iconPath>EBSG/Gene_Murderous</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>1.2</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.6</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_SomewhatPlacated</defName>
+		<label>somewhat placated</label>
+		<description>Carriers of this gene do not feel experience as much of a murderous urge as most with the kill thirst gene, causing it to become unbearable a little slower.</description>
+		<iconPath>EBSG/Gene_Placated</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>0.75</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.7</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_Placated</defName>
+		<label>placated</label>
+		<description>Carriers of this gene do not feel experience as much of a murderous urge as most with the kill thirst gene, causing it to become unbearable slower.</description>
+		<iconPath>EBSG/Gene_Placated</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>0.50</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.8</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_KillThirstChangeBase">
+		<defName>EBSG_VeryPlacated</defName>
+		<label>very placated</label>
+		<description>Carriers of this gene do not feel experience as much of a murderous urge as most with the kill thirst gene, causing it to become unbearable a lot slower.</description>
+		<iconPath>EBSG/Gene_VeryPlacated</iconPath>
+		<statFactors>
+            <EBSG_KillThirstRate>0.25</EBSG_KillThirstRate>
+		</statFactors>
+		<displayOrderInCategory>60.9</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+</Defs>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_InsectSlayerBase" Abstract="True">
+        <displayCategory>EBSG_Slayer</displayCategory>
+        <exclusionTags>
+            <li>EBSG_InsectSlayer</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_AbysmalInsectSlayer</defName>
+        <label>abysmal insect slayer</label>
+        <description>Due to some weird genetic manipulation of the carrier's brain, they find themselves almost incapable of dealing any notable damage to insect targets.</description>
+        <iconPath>EBSG/Gene_ExtremelyBadInsectSlayer</iconPath>
+        <displayOrderInCategory>401</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>4</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>0.2</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_ExtremelyBadInsectSlayer</defName>
+        <label>extremely bad insect slayer</label>
+        <description>Carriers of this gene have significant difficulty killing other insects, either because of a special wiring in their brains to not take the lives of insectoids, or just general inexplicable physical incapability not yet explained by science.</description>
+        <iconPath>EBSG/Gene_ExtremelyBadInsectSlayer</iconPath>
+        <displayOrderInCategory>402</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>0.4</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_VeryBadInsectSlayer</defName>
+        <label>very bad insect slayer</label>
+        <description>Carriers of this gene have major issues when trying to kill other insects, either because of a special wiring in their brains to not take the lives of insectoids, or just general inexplicable physical incapability not yet explained by science.</description>
+        <iconPath>EBSG/Gene_BadInsectSlayer</iconPath>
+        <displayOrderInCategory>403</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>0.6</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_BadInsectSlayer</defName>
+        <label>bad insect slayer</label>
+        <description>Carriers of this gene have issues when trying to kill other insects, either because of a special wiring in their brains to not take the lives of insectoids, or just general inexplicable physical incapability not yet explained by science.</description>
+        <iconPath>EBSG/Gene_BadInsectSlayer</iconPath>
+        <displayOrderInCategory>404</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>0.8</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_SomewhatGoodInsectSlayer</defName>
+        <label>somewhat good insect slayer</label>
+        <description>Carriers of this gene instinctively know some of the weak points of any insectoid they fight, making it easier to kill them.</description>
+        <iconPath>EBSG/Gene_GoodInsectSlayer</iconPath>
+        <displayOrderInCategory>405</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>1.15</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_GoodInsectSlayer</defName>
+        <label>good insect slayer</label>
+        <description>Carriers of this gene instinctively know a lot of the weak points of any insectoid they fight, making it easier to kill them.</description>
+        <iconPath>EBSG/Gene_GoodInsectSlayer</iconPath>
+        <displayOrderInCategory>406</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>1.30</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+    
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_VeryGoodInsectSlayer</defName>
+        <label>very good insect slayer</label>
+        <description>Carriers of this gene instinctively know most of the weak points of any insectoid they fight, making it easier to kill them.</description>
+        <iconPath>EBSG/Gene_GoodInsectSlayer</iconPath>
+        <displayOrderInCategory>407</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>1.45</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_ExtremelyGoodInsectSlayer</defName>
+        <label>extremely good insect slayer</label>
+        <description>Carriers of this gene instinctively know every weak point of any insectoid they fight, making it significantly easier to kill them.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodInsectSlayer</iconPath>
+        <displayOrderInCategory>408</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>1.60</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_InsectSlayerBase">
+        <defName>EBSG_UnbelievablyGoodInsectSlayer</defName>
+        <label>unbelievably good insect slayer</label>
+        <description>Carriers of this gene instinctively know every weak point of any insectoid they fight and have the ability to predict where the insect will move next with a low accuracy rate, making it significantly easier to kill them.\n\nAlite's note: Predictive ability doesn't really exist or do anything, it's just some fluff text that I use to be able to claim this gene makes complete sense.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodInsectSlayer</iconPath>
+        <displayOrderInCategory>409</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-5</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Insect>1.75</EBSG_OutgoingDamageFactor_Insect>
+        </statFactors>
+    </GeneDef>
+</Defs>

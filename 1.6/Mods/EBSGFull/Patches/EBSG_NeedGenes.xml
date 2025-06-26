@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="AteWithoutTable"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteWithoutTable"]/nullifyingGenes</xpath>
+            <value>
+                <li>EBSG_MajorAsceticism</li>
+                <li>EBSG_ExtremeAsceticism</li>
+                <li>EBSG_SuperAsceticism</li>
+                <li>EBSG_HyperAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_MinorArchiteInducedAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="AteWithoutTable"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_MajorAsceticism</li>
+                    <li>EBSG_ExtremeAsceticism</li>
+                    <li>EBSG_SuperAsceticism</li>
+                    <li>EBSG_HyperAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_MinorArchiteInducedAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptOutside"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOutside"]/nullifyingGenes</xpath>
+            <value>
+                <li>EBSG_ExtremeAsceticism</li>
+                <li>EBSG_SuperAsceticism</li>
+                <li>EBSG_HyperAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_MinorArchiteInducedAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOutside"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_ExtremeAsceticism</li>
+                    <li>EBSG_SuperAsceticism</li>
+                    <li>EBSG_HyperAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_MinorArchiteInducedAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptOnGround"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOnGround"]/nullifyingGenes</xpath>
+            <value>
+                <li>EBSG_ExtremeAsceticism</li>
+                <li>EBSG_SuperAsceticism</li>
+                <li>EBSG_HyperAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_MinorArchiteInducedAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptOnGround"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_ExtremeAsceticism</li>
+                    <li>EBSG_SuperAsceticism</li>
+                    <li>EBSG_HyperAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_MinorArchiteInducedAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+    
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptInCold"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInCold"]/nullifyingGenes</xpath>
+            <value>
+                <li>EBSG_SuperAsceticism</li>
+                <li>EBSG_HyperAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInCold"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_SuperAsceticism</li>
+                    <li>EBSG_HyperAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThoughtDef[defName="SleptInHeat"]/nullifyingGenes</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInHeat"]/nullifyingGenes</xpath>
+            <value>
+                <li>EBSG_SuperAsceticism</li>
+                <li>EBSG_HyperAsceticism</li>
+                <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+            </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThoughtDef[defName="SleptInHeat"]</xpath>
+            <value>
+                <nullifyingGenes>
+                    <li>EBSG_SuperAsceticism</li>
+                    <li>EBSG_HyperAsceticism</li>
+                    <li MayRequire="EBSG.Archite">EBSG_ArchiteInducedAsceticism</li>
+                </nullifyingGenes>
+            </value>
+        </nomatch>
+    </Operation>
+</Patch>

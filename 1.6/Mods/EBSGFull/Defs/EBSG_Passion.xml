@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>    
+    <GeneDef Name="EBSG_Passion" Abstract="True">
+        <geneClass>EBSGFramework.Gene_SkillChanging</geneClass>
+        <displayCategory>EBSG_Passions</displayCategory>
+        <description>Carriers of this gene have two levels of passion for this skill.</description>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Shooting</defName>
+        <label>shooting passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Shooting/PassionAdd</iconPath>
+        <displayOrderInCategory>1.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Shooting</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Shooting</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Melee</defName>
+        <label>melee passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Melee/PassionAdd</iconPath>
+        <displayOrderInCategory>2.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Melee</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Melee</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Construction</defName>
+        <label>construction passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Construction/PassionAdd</iconPath>
+        <displayOrderInCategory>3.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Construction</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Construction</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Mining</defName>
+        <label>mining passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Mining/PassionAdd</iconPath>
+        <displayOrderInCategory>4.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Mining</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Mining</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Cooking</defName>
+        <label>cooking passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Cooking/PassionAdd</iconPath>
+        <displayOrderInCategory>5.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Cooking</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Cooking</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Plants</defName>
+        <label>plants passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Plants/PassionAdd</iconPath>
+        <displayOrderInCategory>6.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Plants</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Plants</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Animals</defName>
+        <label>animals passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Animals/PassionAdd</iconPath>
+        <displayOrderInCategory>7.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Animals</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Animals</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Crafting</defName>
+        <label>crafting passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Crafting/PassionAdd</iconPath>
+        <displayOrderInCategory>8.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Crafting</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Crafting</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Artistic</defName>
+        <label>artistic passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Artistic/PassionAdd</iconPath>
+        <displayOrderInCategory>9.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Artistic</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Artistic</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Medicine</defName>
+        <label>medical passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Medicine/PassionAdd</iconPath>
+        <displayOrderInCategory>10.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Medicine</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Medicine</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Social</defName>
+        <label>social passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Social/PassionAdd</iconPath>
+        <displayOrderInCategory>11.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Social</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Social</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Intellectual</defName>
+        <label>intellectual passion</label>
+        <iconPath>UI/Icons/Genes/Skills/Intellectual/PassionAdd</iconPath>
+        <displayOrderInCategory>12.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Intellectual</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <skill>Intellectual</skill>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Passion">
+        <defName>EBSG_Passion_Random</defName>
+        <label>random passion</label>
+        <description>Carriers of this gene have two levels of passion for a random skill not already at maximum passion.</description>
+        <iconPath>EBSG/Gene_RandomPassion</iconPath>
+        <displayOrderInCategory>13.6</displayOrderInCategory>
+        <exclusionTags>
+            <li>EBSG_Passion_Random</li>
+        </exclusionTags>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGExtension">
+                <skillChanges>
+                    <li>
+                        <passionChange>2</passionChange>
+                    </li>
+                </skillChanges>
+            </li>
+	    </modExtensions>
+    </GeneDef>
+</Defs>

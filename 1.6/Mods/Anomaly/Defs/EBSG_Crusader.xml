@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_Crusader" Abstract="True">
+        <displayCategory>EBSG_AnomalyGenes</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Crusader</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_AbsoluteHeathen</defName>
+        <label>absolute heathen</label>
+        <description>Carriers of this gene instinctively believe that there's no harm in letting the void visit our reality, and this belief causes them to refuse to suppress entities.</description>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_AbsoluteHeathen</iconPath>
+        <biostatMet>3</biostatMet>
+        <statFactors>
+            <ActivitySuppressionRate>0</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_Heathen</defName>
+        <label>heathen</label>
+        <description>Carriers of this gene instinctively dislike the idea of suppressing entities visiting from the void, and as a result won't be effective at doing so.\n\nWARNING: Due to how suppression work is handled, you probably don't want this on your warden.</description>
+        <displayOrderInCategory>101</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Heathen</iconPath>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <ActivitySuppressionRate>0.33</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_MinorHeathen</defName>
+        <label>minor heathen</label>
+        <description>Carriers of this gene instinctively dislike the idea of suppressing entities visiting from the void, and as a result will be slightly less effective at doing so.\n\nWARNING: Due to how suppression work is handled, you probably don't want this on your warden.</description>
+        <displayOrderInCategory>102</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Heathen</iconPath>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <ActivitySuppressionRate>0.67</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_DecentCrusader</defName>
+        <label>decent crusader</label>
+        <description>Carriers of this gene instinctively seek to stop the darkness that creeps out from the void, making them slightly better at suppressing anomalies.</description>
+        <displayOrderInCategory>103</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Crusader</iconPath>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <ActivitySuppressionRate>1.25</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_Crusader</defName>
+        <label>crusader</label>
+        <description>Carriers of this gene instinctively seek to stop the darkness that creeps out from the void, making them better at suppressing anomalies.</description>
+        <displayOrderInCategory>104</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Crusader</iconPath>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <ActivitySuppressionRate>1.5</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_GoodCrusader</defName>
+        <label>good crusader</label>
+        <description>Carriers of this gene instinctively seek to stop the darkness that creeps out from the void, making them a lot better at suppressing anomalies.</description>
+        <displayOrderInCategory>105</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Crusader</iconPath>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>1.75</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_ExceptionalCrusader</defName>
+        <label>exceptional crusader</label>
+        <description>Carriers of this gene instinctively seek to stop the invaders from the void, making them exceptionally good at suppressing anomalies.</description>
+        <displayOrderInCategory>106</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalCrusader</iconPath>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>2.0</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_SuperCrusader</defName>
+        <label>super crusader</label>
+        <description>Carriers of this gene instinctively seek to stop the invaders from the void, making them super good at suppressing anomalies.</description>
+        <displayOrderInCategory>107</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalCrusader</iconPath>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>2.25</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader">
+        <defName>EBSG_AmazingCrusader</defName>
+        <label>amazing crusader</label>
+        <description>Carriers of this gene are so unbelievably good at suppressing entities that things are much less likely to go wrong when they're around.</description>
+        <displayOrderInCategory>108</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalCrusader</iconPath>
+        <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>2.5</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <!--Thrown into this mod instead of the archite mod this time because it felt more efficient in terms of load time. 
+    I'm assuming Anomaly Genes will be the ones least used, so instead of doing the check in EAG, I'm doing a check for EAG here.-->
+
+    <GeneDef ParentName="EBSG_Crusader" MayRequire="EBSG.Archite">
+        <defName>EBSG_MinorArchiteEnhancedCrusader</defName>
+        <label>minor archite enhanced crusader</label>
+        <description>Carriers of this gene have a small number of archites throughout their bodies that assist with suppressing entities.</description>
+        <displayOrderInCategory>109</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_Crusader</iconPath>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>2</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader" MayRequire="EBSG.Archite">
+        <defName>EBSG_ArchiteEnhancedCrusader</defName>
+        <label>archite enhanced crusader</label>
+        <description>Carriers of this gene have a small number of archites throughout their bodies that assist with suppressing entities.</description>
+        <displayOrderInCategory>110</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalCrusader</iconPath>
+        <biostatArc>2</biostatArc>
+        <biostatCpx>6</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>3</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Crusader" MayRequire="EBSG.Archite">
+        <defName>EBSG_MajorArchiteEnhancedCrusader</defName>
+        <label>major archite enhanced crusader</label>
+        <description>Carriers of this gene have a large number of archites throughout their bodies that assist with suppressing entities.</description>
+        <displayOrderInCategory>111</displayOrderInCategory>
+        <iconPath>EBSG/EBSG_ExceptionalCrusader</iconPath>
+        <biostatArc>3</biostatArc>
+        <biostatCpx>9</biostatCpx>
+        <statFactors>
+            <ActivitySuppressionRate>4</ActivitySuppressionRate>
+        </statFactors>
+    </GeneDef>
+</Defs>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Abstract="True" Name="EBSG_BloodRestoration">
+        <displayCategory>Healing</displayCategory>
+        <exclusionTags><li>BloodRecovery</li></exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_NoBloodRecovery</defName>
+        <label>no blood recovery</label>
+        <description>Carriers of this gene can't naturally replenish blood, and must receive blood from other sources.</description>
+        <iconPath>EBSG/Gene_VerySlowBloodRecovery</iconPath>
+        <biostatMet>4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <displayOrderInCategory>98.0</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>-1.00</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_VerySlowBloodRecovery</defName>
+        <label>very slow blood recovery</label>
+        <description>Carriers of this gene replenish blood 4 times slower than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_VerySlowBloodRecovery</iconPath>
+        <biostatMet>3</biostatMet>
+        <displayOrderInCategory>98.1</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>-0.75</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_SlowBloodRecovery</defName>
+        <label>slow blood recovery</label>
+        <description>Carriers of this gene replenish blood 2 times slower than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_SlowBloodRecovery</iconPath>
+        <biostatMet>2</biostatMet>
+        <displayOrderInCategory>98.2</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>-0.50</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_SlightlySlowBloodRecovery</defName>
+        <label>slightly slow blood recovery</label>
+        <description>Carriers of this gene replenish blood 1.5 times slower than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_SlowBloodRecovery</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayOrderInCategory>98.3</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>-0.25</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_SlightlyFastBloodRecovery</defName>
+        <label>slightly fast blood recovery</label>
+        <description>Carriers of this gene replenish blood 1.25 times faster than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_BloodRecovery</iconPath>
+        <biostatMet>-1</biostatMet>
+        <displayOrderInCategory>98.4</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>0.25</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_FastBloodRecovery</defName>
+        <label>fast blood recovery</label>
+        <description>Carriers of this gene replenish blood 1.5 times faster than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_BloodRecovery</iconPath>
+        <biostatMet>-2</biostatMet>
+        <displayOrderInCategory>98.5</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>0.50</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_VeryFastBloodRecovery</defName>
+        <label>very fast blood recovery</label>
+        <description>Carriers of this gene replenish blood 1.75 times faster than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_BloodRecovery</iconPath>
+        <biostatMet>-3</biostatMet>
+        <displayOrderInCategory>98.6</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>0.75</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_ExtremelyFastBloodRecovery</defName>
+        <label>extremely fast blood recovery</label>
+        <description>Carriers of this gene replenish blood 2 times faster than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+        <biostatMet>-4</biostatMet>
+        <displayOrderInCategory>98.7</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>1.00</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_SuperFastBloodRecovery</defName>
+        <label>super fast blood recovery</label>
+        <description>Carriers of this gene replenish blood 2.25 times faster than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+        <biostatMet>-5</biostatMet>
+        <displayOrderInCategory>98.8</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>1.25</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_BloodRestoration">
+        <defName>EBSG_HyperFastBloodRecovery</defName>
+        <label>hyper fast blood recovery</label>
+        <description>Carriers of this gene replenish blood 2.5 faster than normal. This will only take effect if the pawn is not actively bleeding.</description>
+        <iconPath>EBSG/Gene_ExtremeBloodRecovery</iconPath>
+        <biostatMet>-6</biostatMet>
+        <displayOrderInCategory>98.9</displayOrderInCategory>
+        <statOffsets>
+            <EBSG_BloodlossRecoveryBonus>1.50</EBSG_BloodlossRecoveryBonus>
+        </statOffsets>
+    </GeneDef>
+</Defs>

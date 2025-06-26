@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_FertilityByAge" Abstract="true">
+        <displayCategory>Reproduction</displayCategory>
+        <biostatMet>0</biostatMet>
+        <exclusionTags>
+            <li>EBSG_FertilityByAge</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityShorteningHyper</defName>
+        <label>hyper aging fertility shortening</label>
+        <iconPath>EBSG/Gene_FertilityShorteningExtreme</iconPath>
+        <description>Carriers of this gene have their fertility shortened by a factor of 2.5. This means they will still mostly follow the same curve, but it will take far fewer years to reach peaks and lows.\n\nUnlike the extension genes, the starting point will not move with the rest of the curve,  which means the curve will both start and end later than math would suggest(i.e. shortening by 2 puts male start and ends at 14 and 52 instead of the 7 and 45 the math says based on the normal 14 and 90).\n\nThis is intended for xenotypes that have unbelievably short lifespans for whatever reason.</description>
+        <displayOrderInCategory>208.7</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 14</li>
+            <li>Fertility gain peaks at age 16 for males, and 16 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 28 for males, and 20 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss ends at age 44 for males, and 28 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(16, 1)</li>
+                        <li>(28, 1)</li>
+                        <li>(44, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(16, 1)</li>
+                        <li>(20, 1)</li>
+                        <li>(22, 0.5)</li>
+                        <li>(24, 0.1)</li>
+                        <li>(25, 0.05)</li>
+                        <li>(28, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityShorteningSuper</defName>
+        <label>super aging fertility shortening</label>
+        <iconPath>EBSG/Gene_FertilityShorteningExtreme</iconPath>
+        <description>Carriers of this gene have their fertility shortened by a factor of 2. This means they will still mostly follow the same curve, but it will take far fewer years to reach peaks and lows.\n\nUnlike the extension genes, the starting point will not move with the rest of the curve,  which means the curve will both start and end later than math would suggest(i.e. shortening by 2 puts male start and ends at 14 and 52 instead of the 7 and 45 the math says based on the normal 14 and 90).\n\nThis is intended for xenotypes that have super short lifespans for whatever reason.</description>
+        <displayOrderInCategory>208.8</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 14</li>
+            <li>Fertility gain peaks at age 16 for males, and 17 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 32 for males, and 21 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss ends at age 52 for males, and 32 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(16, 1)</li>
+                        <li>(32, 1)</li>
+                        <li>(52, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(17, 1)</li>
+                        <li>(21, 1)</li>
+                        <li>(25, 0.5)</li>
+                        <li>(27, 0.1)</li>
+                        <li>(30, 0.05)</li>
+                        <li>(32, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityShorteningExtreme</defName>
+        <label>extreme aging fertility shortening</label>
+        <iconPath>EBSG/Gene_FertilityShorteningExtreme</iconPath>
+        <description>Carriers of this gene have their fertility shortened by a factor of 1.5. This means they will still mostly follow the same curve, but it will take far fewer years to reach peaks and lows.\n\nUnlike the extension genes, the starting point will not move with the rest of the curve,  which means the curve will both start and end later than math would suggest(i.e. shortening by 2 puts male start and ends at 14 and 52 instead of the 7 and 45 the math says based on the normal 14 and 90).\n\nThis is intended for xenotypes that have extremely short lifespans for whatever reason.</description>
+        <displayOrderInCategory>208.9</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 14</li>
+            <li>Fertility gain peaks at age 16 for males, and 17 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 35 for males, and 22 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss ends at age 57 for males, and 35 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(16, 1)</li>
+                        <li>(35, 1)</li>
+                        <li>(57, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(17, 1)</li>
+                        <li>(22, 1)</li>
+                        <li>(26, 0.5)</li>
+                        <li>(29, 0.1)</li>
+                        <li>(32, 0.05)</li>
+                        <li>(35, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityShorteningMajor</defName>
+        <label>major aging fertility shortening</label>
+        <iconPath>EBSG/Gene_FertilityShortening</iconPath>
+        <description>Carriers of this gene have their fertility shortened by a factor of 1.5. This means they will still mostly follow the same curve, but it will take far fewer years to reach peaks and lows.\n\nUnlike the extension genes, the starting point will not move with the rest of the curve,  which means the curve will both start and end later than math would suggest(i.e. shortening by 2 puts male start and ends at 14 and 52 instead of the 7 and 45 the math says based on the normal 14 and 90).\n\nThis is intended for xenotypes that have shorter lifespans for whatever reason.</description>
+        <displayOrderInCategory>209.0</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 14</li>
+            <li>Fertility gain peaks at age 17 for males, and 19 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 43 for males, and 25 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss ends at age 75 for males, and 43 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(17, 1)</li>
+                        <li>(43, 1)</li>
+                        <li>(75, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(19, 1)</li>
+                        <li>(25, 1)</li>
+                        <li>(31, 0.5)</li>
+                        <li>(35, 0.1)</li>
+                        <li>(39, 0.05)</li>
+                        <li>(43, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityShortening</defName>
+        <label>aging fertility shortening</label>
+        <iconPath>EBSG/Gene_FertilityShortening</iconPath>
+        <description>Carriers of this gene have their fertility shortened by a factor of 1.25. This means they will still mostly follow the same curve, but it will take far fewer years to reach peaks and lows.\n\nUnlike the extension genes, the starting point will not move with the rest of the curve,  which means the curve will both start and end later than math would suggest(i.e. shortening by 2 puts male start and ends at 14 and 52 instead of the 7 and 45 the math says based on the normal 14 and 90).\n\nThis is intended for xenotypes that have shorter lifespans for whatever reason.</description>
+        <displayOrderInCategory>209.1</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 14</li>
+            <li>Fertility gain peaks at age 17 for males, and 19 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 43 for males, and 25 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss ends at age 75 for males, and 43 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(17, 1)</li>
+                        <li>(43, 1)</li>
+                        <li>(75, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(19, 1)</li>
+                        <li>(25, 1)</li>
+                        <li>(31, 0.5)</li>
+                        <li>(35, 0.1)</li>
+                        <li>(39, 0.05)</li>
+                        <li>(43, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityShorteningMinor</defName>
+        <label>minor aging fertility shortening</label>
+        <iconPath>EBSG/Gene_FertilityShortening</iconPath>
+        <description>Carriers of this gene have their fertility shortened by a factor of 1.1. This means they will still mostly follow the same curve, but it will take far fewer years to reach peaks and lows.\n\nUnlike the extension genes, the starting point will not move with the rest of the curve,  which means the curve will both start and end later than math would suggest(i.e. shortening by 2 puts male start and ends at 14 and 52 instead of the 7 and 45 the math says based on the normal 14 and 90).\n\nThis is intended for xenotypes that have shorter lifespans for whatever reason.</description>
+        <displayOrderInCategory>209.2</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 14</li>
+            <li>Fertility gain peaks at age 18 for males, and 19 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 47 for males, and 27 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss ends at age 83 for males, and 47 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(18, 1)</li>
+                        <li>(47, 1)</li>
+                        <li>(83, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(19, 1)</li>
+                        <li>(27, 1)</li>
+                        <li>(33, 0.5)</li>
+                        <li>(38, 0.1)</li>
+                        <li>(42, 0.05)</li>
+                        <li>(47, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityExtensionMinor</defName>
+        <label>minor aging fertility extension</label>
+        <iconPath>EBSG/Gene_FertilityExtension</iconPath>
+        <description>Carriers of this gene have their fertility elongated by a factor of 1.5. This means they will still follow the same curve, but it will take many more years to reach peaks and lows.\n\nUnlike the shortening genes, the starting point will move with the rest of the curve.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an extremely long lived xenotype, it is recommended to include an immunity gain speed.\n\nIf you have More Cell Stability Genes, this would cover the lifespan of a xenotype with super cell stability. Covers the 140%-180% factor range (age easily reaches 112-144 years).</description>
+        <displayOrderInCategory>209.3</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 21 instead of the normal 14</li>
+            <li>Fertility gain limit at age 27 for males, and 30 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 75 for males, and 42 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss limit at age 135 for males, and 75 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(21, 0)</li>
+                        <li>(27, 1)</li>
+                        <li>(75, 1)</li>
+                        <li>(135, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(21, 0)</li>
+                        <li>(30, 1)</li>
+                        <li>(42, 1)</li>
+                        <li>(53, 0.5)</li>
+                        <li>(60, 0.1)</li>
+                        <li>(68, 0.05)</li>
+                        <li>(75, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityExtension</defName>
+        <label>aging fertility extension</label>
+        <iconPath>EBSG/Gene_FertilityExtension</iconPath>
+        <description>Carriers of this gene have their fertility elongated by a factor of 2. This means they will still follow the same curve, but it will take many more years to reach peaks and lows.\n\nUnlike the shortening genes, the starting point will move with the rest of the curve.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an long lived xenotype, it is recommended to include an immunity gain speed.\n\nIf you have Expanded Archite Genes and More Cell Stability Genes, this would cover the lifespan of a xenotype with major archite cell stability. Covers the 200%-250% lifespan factor range (age easily reaches 160-200 years).</description>
+        <displayOrderInCategory>209.4</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 28 instead of the normal 14</li>
+            <li>Fertility gain limit at age 36 for males, and 40 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 100 for males, and 56 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss limit at age 180 for males, and 100 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(28, 0)</li>
+                        <li>(36, 1)</li>
+                        <li>(100, 1)</li>
+                        <li>(180, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(28, 0)</li>
+                        <li>(40, 1)</li>
+                        <li>(56, 1)</li>
+                        <li>(70, 0.5)</li>
+                        <li>(80, 0.1)</li>
+                        <li>(90, 0.05)</li>
+                        <li>(100, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityExtensionMajor</defName>
+        <label>major aging fertility extension</label>
+        <iconPath>EBSG/Gene_FertilityExtension</iconPath>
+        <description>Carriers of this gene have their fertility elongated by a factor of 4. This means they will still follow the same curve, but it will take many more years to reach peaks and lows.\n\nUnlike the shortening genes, the starting point will move with the rest of the curve.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an long lived xenotype, it is recommended to include an immunity gain speed.\n\nThis covers xenotypes with a lifespan factor of 400%-500%. A 500% multiplier makes pawns easily live to be 400 years, assuming no other methods are used to prolong life.</description>
+        <displayOrderInCategory>209.5</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 56 instead of the normal 14</li>
+            <li>Fertility gain limit at age 72 for males, and 80 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 200 for males, and 112 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss limit at age 360 for males, and 200 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(56, 0)</li>
+                        <li>(72, 1)</li>
+                        <li>(200, 1)</li>
+                        <li>(360, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(56, 0)</li>
+                        <li>(80, 1)</li>
+                        <li>(112, 1)</li>
+                        <li>(140, 0.5)</li>
+                        <li>(160, 0.1)</li>
+                        <li>(180, 0.05)</li>
+                        <li>(200, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityExtensionExtreme</defName>
+        <label>extreme aging fertility extension</label>
+        <iconPath>EBSG/Gene_FertilityExtensionExtreme</iconPath>
+        <description>Carriers of this gene have their fertility elongated by a factor of 6. This means they will still follow the same curve, but it will take many more years to reach peaks and lows.\n\nUnlike the shortening genes, the starting point will move with the rest of the curve.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an extremely long lived xenotype, it is recommended to include an immunity gain speed.\n\nThis covers xenotypes with a lifespan factor of 600%-700%. A 700% multiplier makes pawns easily live to be 560 years, assuming no other methods are used to prolong life.</description>
+        <displayOrderInCategory>209.6</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 84 instead of the normal 14</li>
+            <li>Fertility gain limit at age 108 for males, and 120 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 300 for males, and 168 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss limit at age 540 for males, and 300 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(84, 0)</li>
+                        <li>(108, 1)</li>
+                        <li>(300, 1)</li>
+                        <li>(540, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(84, 0)</li>
+                        <li>(120, 1)</li>
+                        <li>(168, 1)</li>
+                        <li>(210, 0.5)</li>
+                        <li>(240, 0.1)</li>
+                        <li>(270, 0.05)</li>
+                        <li>(300, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityExtensionSuper</defName>
+        <label>super aging fertility extension</label>
+        <iconPath>EBSG/Gene_FertilityExtensionExtreme</iconPath>
+        <description>Carriers of this gene have their fertility elongated by a factor of 8. This means they will still follow the same curve, but it will take many more years to reach peaks and lows.\n\nUnlike the shortening genes, the starting point will move with the rest of the curve.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an extremely long lived xenotype, it is recommended to include an immunity gain speed.\n\nThis covers xenotypes with a lifespan factor of 800%-900%. A 900% multiplier makes pawns easily live to be 720 years, assuming no other methods are used to prolong life.</description>
+        <displayOrderInCategory>209.7</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 112 instead of the normal 14</li>
+            <li>Fertility gain limit at age 144 for males, and 160 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 400 for males, and 224 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss limit at age 720 for males, and 400 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(112, 0)</li>
+                        <li>(144, 1)</li>
+                        <li>(400, 1)</li>
+                        <li>(720, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(112, 0)</li>
+                        <li>(160, 1)</li>
+                        <li>(224, 1)</li>
+                        <li>(280, 0.5)</li>
+                        <li>(320, 0.1)</li>
+                        <li>(360, 0.05)</li>
+                        <li>(400, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_FertilityExtensionHyper</defName>
+        <label>hyper aging fertility extension</label>
+        <iconPath>EBSG/Gene_FertilityExtensionExtreme</iconPath>
+        <description>Carriers of this gene have their fertility elongated by a factor of 10. This means they will still follow the same curve, but it will take many more years to reach peaks and lows.\n\nUnlike the shortening genes, the starting point will move with the rest of the curve.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an unbelievably long lived xenotype, it is recommended to include an immunity gain speed.\n\nThis covers xenotypes with a lifespan factor of 1000% or more. An 1,000% multiplier makes pawns easily live to be 800 years, assuming no other methods are used to prolong life.</description>
+        <displayOrderInCategory>209.8</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Fertility gain begins at age 140 instead of the normal 14</li>
+            <li>Fertility gain limit at age 180 for males, and 200 for females instead of the normal 18 and 20 respectively</li>
+            <li>Fertility loss starts at age 500 for males, and 280 for females instead of the normal 50 and 28 respectively</li>
+            <li>Fertility loss limit at age 900 for males, and 500 for females instead of the normal 90 and 50 respectively</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(140, 0)</li>
+                        <li>(180, 1)</li>
+                        <li>(500, 1)</li>
+                        <li>(900, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(140, 0)</li>
+                        <li>(200, 1)</li>
+                        <li>(280, 1)</li>
+                        <li>(350, 0.5)</li>
+                        <li>(400, 0.1)</li>
+                        <li>(450, 0.05)</li>
+                        <li>(500, 0)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_AlwaysFertile</defName>
+        <label>always fertile</label>
+        <iconPath>EBSG/Gene_AlwaysFertile</iconPath>
+        <description>Carriers of this gene never lose all of their fertility due to the effects of old age.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an extremely long lived xenotype, it is recommended to include an immunity gain speed.</description>
+        <displayOrderInCategory>209.9</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <customEffectDescriptions>
+            <li>Fertility loss due to old age stops at 5%.</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <maleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(18, 1)</li>
+                        <li>(50, 1)</li>
+                        <li>(90, 0.05)</li>
+                    </points>
+                </maleFertilityAgeFactor>
+                <femaleFertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(20, 1)</li>
+                        <li>(28, 1)</li>
+                        <li>(35, 0.5)</li>
+                        <li>(40, 0.1)</li>
+                        <li>(45, 0.05)</li>
+                    </points>
+                </femaleFertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_FertilityByAge">
+        <defName>EBSG_AlwaysVeryFertile</defName>
+        <label>always very fertile</label>
+        <iconPath>EBSG/Gene_AlwaysVeryFertile</iconPath>
+        <description>Carriers of this gene never lose fertility due to the effects of old age.\n\nThey will still lose immunity gain speed due to age at the normal rate, so if this is to be attached to an extremely long lived xenotype, it is recommended to include an immunity gain speed.</description>
+        <displayOrderInCategory>210</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <customEffectDescriptions>
+            <li>Completely stops fertility loss due to old age.</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="EBSGFramework.FertilityByGenderAgeExtension">
+                <fertilityAgeFactor>
+                    <points>
+                        <li>(14, 0)</li>
+                        <li>(20, 1)</li>
+                        <li>(50, 1)</li>
+                    </points>
+                </fertilityAgeFactor>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneCategoryDef>
+        <defName>EBSG_NeedRateChange</defName>
+        <label>EBSG - miscellaneous need rate change</label>
+        <displayPriorityInXenotype>459</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Abstract="True" Name="EBSG_ComfortChangeBase">
+        <displayCategory>EBSG_NeedRateChange</displayCategory>
+        <exclusionTags>
+            <li>EBSG_ComfortChange</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_SuperHedonism</defName>
+		<label>super hedonism</label>
+		<description>Carriers of this gene are constantly focusing on living a comfortable lifestyle, leading them to experience discomfort super quickly while also taking longer than most to feel very comfortable.</description>
+		<iconPath>EBSG/Gene_ExtremeHedonism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>0.5</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>2.0</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.2</displayOrderInCategory>
+		<biostatMet>5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_ExtremeHedonism</defName>
+		<label>extremely hedonism</label>
+		<description>Carriers of this gene are constantly focusing on living a comfortable lifestyle, leading them to experience discomfort extremely quickly while also taking an extremely long time to feel very comfortable compared to normal.</description>
+		<iconPath>EBSG/Gene_ExtremeHedonism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>0.6</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>1.8</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.3</displayOrderInCategory>
+		<biostatMet>4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_MajorHedonism</defName>
+		<label>major hedonism</label>
+		<description>Carriers of this gene are constantly focusing on living a comfortable lifestyle, leading them to experience discomfort much faster than normal while also taking a lot longer than most to feel very comfortable.</description>
+		<iconPath>EBSG/Gene_Hedonism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>0.7</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>1.6</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.4</displayOrderInCategory>
+		<biostatMet>3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_Hedonism</defName>
+		<label>hedonism</label>
+		<description>Carriers of this gene are constantly focusing on living a comfortable lifestyle, leading them to experience discomfort faster than normal while also taking longer than most to feel very comfortable.</description>
+		<iconPath>EBSG/Gene_Hedonism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>0.8</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>1.4</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.5</displayOrderInCategory>
+		<biostatMet>2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_MinorHedonism</defName>
+		<label>minor hedonism</label>
+		<description>Carriers of this gene are constantly focusing on living a comfortable lifestyle, leading them to experience discomfort a little faster than normal while also taking a little bit longer than most to feel very comfortable.</description>
+		<iconPath>EBSG/Gene_Hedonism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>0.9</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>1.2</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.6</displayOrderInCategory>
+		<biostatMet>1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_MinorAsceticism</defName>
+		<label>minor asceticism</label>
+		<description>Carriers of this gene do not feel as concerned about personal comfort compared to most, causing them to recover from discomfort a little faster while also taking longer to feel uncomfortable.</description>
+		<iconPath>EBSG/Gene_Asceticism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>1.2</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>0.9</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.7</displayOrderInCategory>
+		<biostatMet>-1</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_Asceticism</defName>
+		<label>asceticism</label>
+		<description>Carriers of this gene do not feel as concerned about personal comfort compared to most, causing them to recover from discomfort faster while also taking longer to feel uncomfortable.</description>
+		<iconPath>EBSG/Gene_Asceticism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>1.4</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>0.75</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.8</displayOrderInCategory>
+		<biostatMet>-2</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_MajorAsceticism</defName>
+		<label>major asceticism</label>
+		<description>Carriers of this gene do not feel as concerned about personal comfort compared to most, causing them to recover from discomfort a lot faster while also taking longer to feel uncomfortable.</description>
+		<iconPath>EBSG/Gene_Asceticism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>1.6</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>0.6</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>0.9</displayOrderInCategory>
+		<biostatMet>-3</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_ExtremeAsceticism</defName>
+		<label>extreme asceticism</label>
+		<description>Carriers of this gene do not feel as concerned about personal comfort compared to most, causing them to recover from discomfort extremely fast while also taking longer to feel uncomfortable.</description>
+		<iconPath>EBSG/Gene_ExtremeAsceticism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>1.8</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>0.4</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>1.0</displayOrderInCategory>
+		<biostatMet>-4</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_SuperAsceticism</defName>
+		<label>super asceticism</label>
+		<description>Carriers of this gene do not feel as concerned about personal comfort compared to most, causing them to recover from discomfort super fast while also taking longer to feel uncomfortable.</description>
+		<iconPath>EBSG/Gene_ExtremeAsceticism</iconPath>
+		<statFactors>
+			<EBSG_ComfortRiseRate>2.0</EBSG_ComfortRiseRate>
+            <EBSG_ComfortFallRate>0.2</EBSG_ComfortFallRate>
+		</statFactors>
+		<displayOrderInCategory>1.1</displayOrderInCategory>
+		<biostatMet>-5</biostatMet>
+	</GeneDef>
+
+    <GeneDef ParentName="EBSG_ComfortChangeBase">
+		<defName>EBSG_HyperAsceticism</defName>
+		<label>hyper asceticism</label>
+		<description>Carriers of this gene do not feel concerned about personal comfort at all, allowing them to completely ignore many things that most would consider uncomfortable.\n\nWhile I did not encounter any issues arising from completely disabling the comfort need, please keep in mind that this may have unintended side effects.</description>
+		<iconPath>EBSG/Gene_ExtremeAsceticism</iconPath>
+		<displayOrderInCategory>1.2</displayOrderInCategory>
+		<biostatMet>-6</biostatMet>
+		<disablesNeeds>
+			<li>Comfort</li>
+		</disablesNeeds>
+	</GeneDef>
+</Defs>

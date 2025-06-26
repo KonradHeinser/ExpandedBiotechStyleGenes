@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>EBSG_Biomes</defName>
+        <label>environmental preference</label>
+        <displayPriorityInXenotype>449</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Abstract="true" Name="EBSG_Biomes">
+        <displayCategory>EBSG_Biomes</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Biomes</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef Abstract="true" Name="EBSG_GroupSize">
+        <displayCategory>EBSG_Biomes</displayCategory>
+        <exclusionTags>
+            <li>EBSG_GroupSize</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Biomes">
+        <defName>EBSG_Undergrounder</defName>
+        <label>undergrounder</label>
+        <description>Carriers of this gene prefer being underground as much as possible.</description>
+        <iconPath>EBSG/Gene_Undergrounder</iconPath>
+        <displayOrderInCategory>100.1</displayOrderInCategory>
+        <forcedTraits>
+            <li>
+                <def>Undergrounder</def>
+            </li>
+        </forcedTraits>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Biomes">
+        <defName>EBSG_Overgrounder</defName>
+        <label>overgrounder</label>
+        <description>Carriers of this gene prefer being outside as much as possible, but don't have any preferences beyond that.</description>
+        <iconPath>EBSG/Gene_Overgrounder</iconPath>
+        <displayOrderInCategory>100.2</displayOrderInCategory>
+        <suppressedTraits>
+            <li>
+                <def>Undergrounder</def>
+            </li>
+        </suppressedTraits>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Biomes">
+        <defName>EBSG_Amphibious</defName>
+        <label>amphibious</label>
+        <description>Carriers of this gene do not care about water. Can be used with webbed phalanges to create a more aquatic type xenotype, though by themselves this will not change movement speed and webbed phalanges will not prevent the soaking wet debuff thought.</description>
+        <iconPath>EBSG/Gene_Amphibious</iconPath>
+        <displayOrderInCategory>100.3</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Biomes">
+        <defName>EBSG_ForestDweller</defName>
+        <label>forest dweller</label>
+        <description>Carriers of this gene have evolved to live amongst the trees, and receive a mood penalty from being away from them for a long time.\n\nThis will stack with the precept, meaning their mood is affected by both their ideological beliefs and instinct.\n\nThey do not care about trees being chopped down, only about being around trees.</description>
+        <iconPath>EBSG/Gene_ForestDweller</iconPath>
+        <displayOrderInCategory>100.5</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Has a mood that acts similar to the trees desired precept.</li>
+            <li>This will stack with that precept, meaning being around trees a lot will give them both an instinctive and an ideological boost.</li>
+        </customEffectDescriptions>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_Biomes">
+        <defName>EBSG_DesertDweller</defName>
+        <label>desert dweller</label>
+        <description>Carriers of this gene have evolved to live in desert climates, and hate the idea of being around trees.\n\nIt is possible for the pawn to be part of an ideology that desires trees, which makes the pawn become torn between their instincts and their religion.\n\nComfortable temperature can still be impacted by normal temperature genes. This is not a bug.</description>
+        <iconPath>EBSG/Gene_DesertDweller</iconPath>
+        <displayOrderInCategory>100.6</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Has a mood that gives the exact reverse benefits that the trees desired precept. For example, the level that would normally provide +9 mood instead causes -9 mood.</li>
+            <li>This will stack with that precept, which means being around trees a lot will leave them conflicted between their instinctive desire to see the sun without any obstructions, and their religious desire to be around trees.</li>
+        </customEffectDescriptions>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+        <statOffsets>
+            <ComfyTemperatureMin>5</ComfyTemperatureMin>
+            <ComfyTemperatureMax>15</ComfyTemperatureMax>
+        </statOffsets>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GroupSize">
+        <defName>EBSG_Reclusive</defName>
+        <label>reclusive</label>
+        <description>Carriers of this gene are instinctively independent, preferring to be alone as much as possible.</description>
+        <iconPath>EBSG/Gene_Reclusive</iconPath>
+        <displayOrderInCategory>100.7</displayOrderInCategory>
+        <forcedTraits>
+            <li>
+                <def>Recluse</def>
+            </li>
+        </forcedTraits>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GroupSize">
+        <defName>EBSG_PackMember</defName>
+        <label>pack member</label>
+        <description>Carriers of this gene instinctively seek to be in a pack, and the fewer members in the pack, the less comfortable they feel.\n\nThe more people in the colony, the higher this pawn's mood will be. The maximum mood is reached around 16 pawns.</description>
+        <iconPath>EBSG/Gene_PackMember</iconPath>
+        <displayOrderInCategory>100.8</displayOrderInCategory>
+        <suppressedTraits>
+            <li>
+                <def>Recluse</def>
+            </li>
+        </suppressedTraits>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_GroupSize">
+        <defName>EBSG_Nomadic</defName>
+        <label>nomadic instinct</label>
+        <description>Carriers of this gene instinctively try to form groups that are neither too large or too small so they can quickly move away if necessary.\n\nFor best effects, keep colony size around 5-10.</description>
+        <iconPath>EBSG/Gene_Nomadic</iconPath>
+        <displayOrderInCategory>100.9</displayOrderInCategory>
+        <suppressedTraits>
+            <li>
+                <def>Recluse</def>
+            </li>
+        </suppressedTraits>
+        <biostatMet>0</biostatMet>
+        <biostatCpx>0</biostatCpx>
+    </GeneDef>
+</Defs>

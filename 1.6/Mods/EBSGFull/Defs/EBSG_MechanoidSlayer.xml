@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_MechanoidSlayerBase" Abstract="True">
+        <displayCategory>EBSG_Slayer</displayCategory>
+        <exclusionTags>
+            <li>EBSG_MechanoidSlayer</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_AbysmalMechanoidSlayer</defName>
+        <label>abysmal mechanoid slayer</label>
+        <description>Due to some weird genetic manipulation of the carrier's brain, they find themselves almost incapable of dealing any notable damage to mechanoid targets.</description>
+        <iconPath>EBSG/Gene_ExtremelyBadMechanoidSlayer</iconPath>
+        <displayOrderInCategory>201</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>4</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>0.2</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_ExtremelyBadMechanoidSlayer</defName>
+        <label>extremely bad mechanoid slayer</label>
+        <description>Carriers of this gene have significant difficulty killing mechanoids, either because of a special wiring in their brains telling them to not destroy potential members of the mechanoid hive, or just general inexplicable physical incapability not yet explained by science.</description>
+        <iconPath>EBSG/Gene_ExtremelyBadMechanoidSlayer</iconPath>
+        <displayOrderInCategory>202</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>0.4</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_VeryBadMechanoidSlayer</defName>
+        <label>very bad mechanoid slayer</label>
+        <description>Carriers of this gene have major issues when trying to kill mechanoids, either because of a special wiring in their brains telling them to not destroy potential members of the mechanoid hive, or just general inexplicable physical incapability not yet explained by science.</description>
+        <iconPath>EBSG/Gene_BadMechanoidSlayer</iconPath>
+        <displayOrderInCategory>203</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>0.6</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_BadMechanoidSlayer</defName>
+        <label>bad mechanoid slayer</label>
+        <description>Carriers of this gene have issues when trying to kill mechanoids, either because of a special wiring in their brains telling them to not destroy potential members of the mechanoid hive, or just general inexplicable physical incapability not yet explained by science.</description>
+        <iconPath>EBSG/Gene_BadMechanoidSlayer</iconPath>
+        <displayOrderInCategory>204</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>0.8</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_SomewhatGoodMechanoidSlayer</defName>
+        <label>somewhat good mechanoid slayer</label>
+        <description>Carriers of this gene instinctively know some of the weak points of any mechanoid they fight, making it easier to destroy them.</description>
+        <iconPath>EBSG/Gene_GoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>205</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>1.15</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_GoodMechanoidSlayer</defName>
+        <label>good mechanoid slayer</label>
+        <description>Carriers of this gene instinctively know a lot of the weak points of any mechanoid they fight, making it easier to destroy them.</description>
+        <iconPath>EBSG/Gene_GoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>206</displayOrderInCategory>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>1.30</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_VeryGoodMechanoidSlayer</defName>
+        <label>very good mechanoid slayer</label>
+        <description>Carriers of this gene instinctively know most of the weak points of any mechanoid they fight, making it easier to destroy them.</description>
+        <iconPath>EBSG/Gene_GoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>207</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-3</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>1.45</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_ExtremelyGoodMechanoidSlayer</defName>
+        <label>extremely good mechanoid slayer</label>
+        <description>Carriers of this gene instinctively know every weak point of any mechanoid they fight, making it significantly easier to destroy them.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>208</displayOrderInCategory>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>-4</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>1.60</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MechanoidSlayerBase">
+        <defName>EBSG_UnbelievablyGoodMechanoidSlayer</defName>
+        <label>unbelievably good mechanoid slayer</label>
+        <description>Carriers of this gene instinctively know every weak point of any mechanoid they fight and have the ability to predict where the mechanoid will move next with a low accuracy rate, making it significantly easier to destroy them.\n\nAlite's note: Predictive ability doesn't really exist or do anything, it's just some fluff text that I use to be able to claim this gene makes complete sense.</description>
+        <iconPath>EBSG/Gene_ExtremelyGoodMechanoidSlayer</iconPath>
+        <displayOrderInCategory>209</displayOrderInCategory>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>-5</biostatMet>
+        <statFactors>
+            <EBSG_OutgoingDamageFactor_Mechanoid>1.75</EBSG_OutgoingDamageFactor_Mechanoid>
+        </statFactors>
+    </GeneDef>
+</Defs>

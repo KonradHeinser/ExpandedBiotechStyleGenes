@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneCategoryDef>
+        <defName>EBSG_RandomBodyParts</defName>
+        <label>EBSG - Gambling Body Parts Away</label>
+        <displayPriorityInXenotype>500.072</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Abstract="True" Name="EBSG_RandomPartBase">
+        <geneClass>EBSGFramework.HediffAdder</geneClass>
+        <description>Carriers of this gene gain random gene(s) from the body parts section with a total metabolic efficiency equal to the efficiency of this gene.</description>
+        <displayCategory>EBSG_RandomBodyParts</displayCategory>
+        <iconPath>EBSG/Gene_RandomPart</iconPath>
+        <customEffectDescriptions><li>For the sake of readability, Slightly is shortened to Sl, Damaged is shortened to Dam, and Missing is shortened to Miss</li><li></li></customEffectDescriptions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPartBase" Abstract="True" Name="EBSG_RandomPairedPartBase">
+        <exclusionTags>
+            <li>EBSG_Kidney</li>
+            <li>EBSG_Lung</li>
+            <li>EBSG_Arm</li>
+            <li>EBSG_Leg</li>
+            <li>EBSG_Ear</li>
+            <li>EBSG_Eye</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPairedPartBase">
+        <defName>EBSG_RandomTier1Part_Paired</defName>
+        <label>random tier 1 paired part loss</label>
+        <displayOrderInCategory>0.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Dam Kidney</li>
+            <li>Dam Lung</li>
+            <li>Dam Arm</li>
+            <li>Dam Leg</li>
+            <li>Miss Ear</li>
+            <li>Miss Eye</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier1PairedPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPairedPartBase">
+        <defName>EBSG_RandomTier2Part_Paired</defName>
+        <label>random tier 2 paired part loss</label>
+        <displayOrderInCategory>0.2</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss Kidney</li>
+            <li>Miss Lung</li>
+            <li>Miss Arm</li>
+            <li>Miss Leg</li>
+            <li>Miss Ears</li>
+            <li>Miss Eyes</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier2PairedPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPairedPartBase">
+        <defName>EBSG_RandomTier3Part_Paired</defName>
+        <label>random tier 3 paired part loss</label>
+        <displayOrderInCategory>0.3</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss and Dam Kidney</li>
+            <li>Miss and Dam Lung</li>
+            <li>Miss and Dam Arm</li>
+            <li>Miss and Dam Leg</li>
+            <li>Miss Ears and Miss Eye</li>
+            <li>Miss Eyes and Miss Ear</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier3PairedPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPartBase" Abstract="True" Name="EBSG_RandomInternalPartBase">
+        <exclusionTags>
+            <li>EBSG_Kidney</li>
+            <li>EBSG_Lung</li>
+            <li>EBSG_Brain</li>
+            <li>EBSG_Heart</li>
+            <li>EBSG_Liver</li>
+            <li>EBSG_Stomach</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomInternalPartBase">
+        <defName>EBSG_RandomTier1Part_Internal</defName>
+        <label>random tier 1 internal part loss</label>
+        <displayOrderInCategory>1.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Dam Kidney</li>
+            <li>Dam Lung</li>
+            <li>Sl Dam Brain</li>
+            <li>Sl Dam Heart</li>
+            <li>Sl Dam Liver</li>
+            <li>Dam Stomach</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier1InternalPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomInternalPartBase">
+        <defName>EBSG_RandomTier2Part_Internal</defName>
+        <label>random tier 2 internal part loss</label>
+        <displayOrderInCategory>1.2</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss Kidney</li>
+            <li>Miss Lung</li>
+            <li>Dam Brain</li>
+            <li>Dam Heart</li>
+            <li>Dam Liver</li>
+            <li>Dam Stomach and Sl Dam Brain</li>
+            <li>Dam Stomach and Sl Dam Heart</li>
+            <li>Dam Stomach and Sl Dam Liver</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier2InternalPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomInternalPartBase">
+        <defName>EBSG_RandomTier3Part_Internal</defName>
+        <label>random tier 3 internal part loss</label>
+        <displayOrderInCategory>1.3</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss and Dam Kidney</li>
+            <li>Miss and Dam Lung</li>
+
+            <li>Miss Kidney and Dam Lung</li>
+            <li>Miss Lung and Dam Kidney</li>
+            <li>Dam Lung, Dam Kidney, and Dam Stomach</li>
+
+            <li>Dam Stomach and Dam Brain</li>
+            <li>Dam Stomach and Dam Heart</li>
+            <li>Dam Stomach and Dam Liver</li>
+            <li>Sl Dam Brain, Sl Dam Heart, and Sl Dam Liver</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier3InternalPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPartBase" Abstract="True" Name="EBSG_RandomExternalPartBase">
+        <exclusionTags>
+            <li>EBSG_Arm</li>
+            <li>EBSG_Leg</li>
+            <li>EBSG_Eye</li>
+            <li>EBSG_Ear</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomExternalPartBase">
+        <defName>EBSG_RandomTier1Part_External</defName>
+        <label>random tier 1 external part loss</label>
+        <displayOrderInCategory>2.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Dam Arm</li>
+            <li>Dam Leg</li>
+            <li>Miss Eye</li>
+            <li>Miss Ear</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier1ExternalPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomExternalPartBase">
+        <defName>EBSG_RandomTier2Part_External</defName>
+        <label>random tier 2 external part loss</label>
+        <displayOrderInCategory>2.2</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss Arm</li>
+            <li>Miss Leg</li>
+            <li>Dam Arm and Dam Leg</li>
+            <li>Miss Eyes</li>
+            <li>Miss Ears</li>
+            <li>Miss Eye and Miss Ear</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier2ExternalPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomExternalPartBase">
+        <defName>EBSG_RandomTier3Part_External</defName>
+        <label>random tier 3 external part loss</label>
+        <displayOrderInCategory>2.3</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss and Dam Arm</li>
+            <li>Miss and Dam Leg</li>
+
+            <li>Miss Arm and Dam Leg</li>
+            <li>Miss Leg and Dam Arm</li>
+            
+            <li>Miss Eyes and Miss Ear</li>
+            <li>Miss Ears and Miss Eye</li>
+
+            <li>Miss Arm and Miss Eye</li>
+            <li>Miss Arm and Miss Ear</li>
+
+            <li>Dam Arm and Dam Leg and Miss Eye</li>
+            <li>Dam Arm and Dam Leg and Miss Ear</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier3ExternalPart</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_RandomPartBase" Abstract="True" Name="EBSG_ChaoticRandomPartBase">
+        <exclusionTags>
+            <li>EBSG_Kidney</li>
+            <li>EBSG_Lung</li>
+            <li>EBSG_Arm</li>
+            <li>EBSG_Leg</li>
+            <li>EBSG_Brain</li>
+            <li>EBSG_Heart</li>
+            <li>EBSG_Liver</li>
+            <li>EBSG_Stomach</li>
+            <li>EBSG_Ear</li>
+            <li>EBSG_Eye</li>
+            <li>EBSG_Spine</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ChaoticRandomPartBase">
+        <defName>EBSG_RandomTier1Part_Chaotic</defName>
+        <label>tier 1 chaotic part loss</label>
+        <displayOrderInCategory>3.1</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Dam Kidney</li>
+            <li>Dam Lung</li>
+
+            <li>Sl Dam Brain</li>
+            <li>Sl Dam Heart</li>
+            <li>Sl Dam Liver</li>
+
+            <li>Dam Stomach</li>
+            <li>Sl Dam Spine</li>
+
+            <li>Dam Arm</li>
+            <li>Dam Leg</li>
+            <li>Miss Ear</li>
+            <li>Miss Eye</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier1Part</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ChaoticRandomPartBase">
+        <defName>EBSG_RandomTier2Part_Chaotic</defName>
+        <label>tier 2 chaotic part loss</label>
+        <displayOrderInCategory>3.2</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss Kidney</li>
+            <li>Miss Lung</li>
+
+            <li>Dam Brain</li>
+            <li>Dam Heart</li>
+            <li>Dam Liver</li>
+
+            <li>Dam Stomach and Sl Dam Brain</li>
+            <li>Dam Stomach and Sl Dam Heart</li>
+            <li>Dam Stomach and Sl Dam Liver</li>
+
+            <li>Dam Spine</li>
+            <li>Miss Arm</li>
+            <li>Miss Leg</li>
+
+            <li>Dam Arm and Dam Leg</li>
+            <li>Dam Arm and Sl Dam Spine</li>
+            <li>Dam Leg and Sl Dam Spine</li>
+
+            <li>Miss Ears</li>
+            <li>Miss Eyes</li>
+            <li>Miss Eye and Miss Ear</li>
+            <li>Miss Eye and Sl Dam Brain</li>
+            <li>Miss Ear and Sl Dam Brain</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier2Part</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_ChaoticRandomPartBase">
+        <defName>EBSG_RandomTier3Part_Chaotic</defName>
+        <label>tier 3 chaotic part loss</label>
+        <displayOrderInCategory>3.3</displayOrderInCategory>
+        <biostatMet>3</biostatMet>
+        <customEffectDescriptions>
+            <li>Potential options:</li>
+            <li>Miss and Dam Kidney</li>
+            <li>Miss and Dam Lung</li>
+
+            <li>Miss Kidney and Dam Lung</li>
+            <li>Miss Lung and Dam Kidney</li>
+            <li>Dam Lung, Dam Kidney, and Dam Stomach</li>
+
+            <li>Dam Stomach and Dam Brain</li>
+            <li>Dam Stomach and Dam Heart</li>
+            <li>Dam Stomach and Dam Liver</li>
+            <li>Sl Dam Brain, Sl Dam Heart, and Sl Dam Liver</li>
+
+            <li>Miss and Dam Arm</li>
+            <li>Miss and Dam Leg</li>
+            <li>Miss Arm and Dam Leg</li>
+            <li>Miss Leg and Dam Arm</li>
+
+            <li>Dam Spine and Sl Dam Brain</li>
+            <li>Sl Dam Spine and Miss Arm</li>
+            <li>Sl Dam Spine and Miss Leg</li>
+            <li>Dam Spine and Dam Arm</li>
+            <li>Dam Spine and Dam Leg</li>
+
+            <li>Miss Ears and Miss Eye</li>
+            <li>Miss Eyes and Miss Ear</li>
+            <li>Miss Eye and Dam Brain</li>
+            <li>Miss Ear and Dam Brain</li>
+            <li>Miss Eye and Miss Ear and Sl Dam Brain</li>
+        </customEffectDescriptions>
+        <modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+                <hediffsToApply><li><hediff>EBSG_RandomTier3Part</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>
