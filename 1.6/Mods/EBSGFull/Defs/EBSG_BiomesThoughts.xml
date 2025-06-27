@@ -101,37 +101,37 @@
             <li>
                 <label>hated trees</label>
                 <description>I am surrounded by several massive, sun concealing trees. they should be removed!</description>
-                <baseMoodEffect>-9</baseMoodEffect>
+                <baseMoodEffect>-5</baseMoodEffect>
             </li>
             <li>
                 <label>horrible tree</label>
                 <description>I very recently encountered a massive, sun concealing tree - why is it still standing!</description>
-                <baseMoodEffect>-8</baseMoodEffect>
+                <baseMoodEffect>-5</baseMoodEffect>
             </li>
             <li>
-                <label>remarkable trees</label>
+                <label>many trees</label>
                 <description>I am surrounded by a lush forest.</description>
-                <baseMoodEffect>-7</baseMoodEffect>
+                <baseMoodEffect>-4</baseMoodEffect>
             </li>
             <li>
                 <label>massive tree</label>
                 <description>I recently encountered a massive, sun concealing tree.</description>
-                <baseMoodEffect>-6</baseMoodEffect>
+                <baseMoodEffect>-4</baseMoodEffect>
             </li>
             <li>
-                <label>rich forest</label>
+                <label>lush forest</label>
                 <description>I was recently surrounded by a lush forest.</description>
-                <baseMoodEffect>-5</baseMoodEffect>
+                <baseMoodEffect>-3</baseMoodEffect>
             </li>
             <li>
                 <label>full trees</label>
                 <description>I recently walked among many full trees.</description>
-                <baseMoodEffect>-4</baseMoodEffect>
+                <baseMoodEffect>-3</baseMoodEffect>
             </li>
             <li>
                 <label>mixed trees</label>
                 <description>I recently walked among a wide variety of trees.</description>
-                <baseMoodEffect>-3</baseMoodEffect>
+                <baseMoodEffect>-2</baseMoodEffect>
             </li>
             <li>
                 <label>full tree</label>
@@ -151,22 +151,22 @@
             <li>
                 <label>no tree</label>
                 <description>I haven't been around any trees in a while.</description>
-                <baseMoodEffect>1</baseMoodEffect>
+                <baseMoodEffect>2</baseMoodEffect>
             </li>
             <li>
                 <label>no tree</label>
                 <description>The lack of trees is starting to make this place feel like home.</description>
-                <baseMoodEffect>2</baseMoodEffect>
+                <baseMoodEffect>4</baseMoodEffect>
             </li>
             <li>
                 <label>trees not seen recently</label>
                 <description>It has been a long time since I've been near a tree.</description>
-                <baseMoodEffect>4</baseMoodEffect>
+                <baseMoodEffect>8</baseMoodEffect>
             </li>
             <li>
                 <label>trees absent</label>
                 <description>It has been so long since I've been forced to see a tree! I finally feel at home now.</description>
-                <baseMoodEffect>5</baseMoodEffect>
+                <baseMoodEffect>10</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
@@ -206,8 +206,8 @@
             </li>
         </stages>
         <modExtensions>
-            <li Class="EBSGFramework.EBSGExtension">
-                <peopleToMoodCurve>
+            <li Class="EBSGFramework.EBSGThoughtExtension">
+                <curve>
                     <points>
                         <li>(1, -8)</li>
                         <li>(2, -6)</li>
@@ -222,7 +222,7 @@
                         <li>(15, 8)</li>
                         <li>(16, 12)</li>
                     </points>
-                </peopleToMoodCurve>
+                </curve>
             </li>
         </modExtensions>
     </ThoughtDef>
@@ -262,8 +262,8 @@
             </li>
         </stages>
         <modExtensions>
-            <li Class="EBSGFramework.EBSGExtension">
-                <peopleToMoodCurve>
+            <li Class="EBSGFramework.EBSGThoughtExtension">
+                <curve>
                     <points>
                         <li>(1, -8)</li>
                         <li>(2, -4)</li>
@@ -278,7 +278,7 @@
                         <li>(15, -4)</li>
                         <li>(16, -8)</li>
                     </points>
-                </peopleToMoodCurve>
+                </curve>
             </li>
         </modExtensions>
     </ThoughtDef>

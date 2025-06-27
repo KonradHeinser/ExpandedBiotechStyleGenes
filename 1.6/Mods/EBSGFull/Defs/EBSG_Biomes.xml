@@ -50,10 +50,33 @@
         <biostatCpx>0</biostatCpx>
     </GeneDef>
 
+    <GeneDef>
+        <defName>EBSGA_BiomeAdaptability</defName>
+        <label>biome adaptability</label>
+        <description>Carriers of this gene never get stressed from being underground or outside too long, and don't care about being soaking wet.</description>
+        <iconPath>EBSG/Gene_Overgrounder</iconPath>
+        <displayOrderInCategory>100.4</displayOrderInCategory>
+        <displayCategory>EBSG_Biomes</displayCategory>
+        <exclusionTags>
+            <li>EBSG_Biomes</li>
+        </exclusionTags>
+        <marketValueFactor>1.25</marketValueFactor>
+        <biostatArc>1</biostatArc>
+        <biostatCpx>3</biostatCpx>
+        <disablesNeeds>
+            <li>Outdoors</li>
+        </disablesNeeds>
+        <suppressedTraits>
+            <li>
+                <def>Undergrounder</def>
+            </li>
+        </suppressedTraits>
+    </GeneDef>
+
     <GeneDef ParentName="EBSG_Biomes">
         <defName>EBSG_Amphibious</defName>
         <label>amphibious</label>
-        <description>Carriers of this gene do not care about water. Can be used with webbed phalanges to create a more aquatic type xenotype, though by themselves this will not change movement speed and webbed phalanges will not prevent the soaking wet debuff thought.</description>
+        <description>Carriers of this gene do not care about water.</description>
         <iconPath>EBSG/Gene_Amphibious</iconPath>
         <displayOrderInCategory>100.3</displayOrderInCategory>
         <biostatMet>-1</biostatMet>
