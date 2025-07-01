@@ -5,7 +5,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/GeneDef[defName="AG_InnatePsylink"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                    <xpath>Defs/GeneDef[defName="AG_InnatePsylink"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
 	                <value><hideGene>true</hideGene></value>
                 </li>
                 <li Class="PatchOperationConditional">

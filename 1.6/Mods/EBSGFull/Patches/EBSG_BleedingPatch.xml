@@ -46,7 +46,7 @@
                 <li Class="PatchOperationConditional">
                     <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]</xpath>
                     <match Class="PatchOperationAdd">
-                        <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                        <xpath>Defs/GeneDef[defName="VRE_Hemophiliac"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
                         <value><hideGene>true</hideGene></value>
                     </match>
                 </li>

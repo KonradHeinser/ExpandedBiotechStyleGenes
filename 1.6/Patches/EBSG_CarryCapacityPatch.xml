@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/GeneDef[defName="AG_PackMule"]</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/GeneDef[defName="AG_PackMule"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+            <xpath>Defs/GeneDef[defName="AG_PackMule"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
             <value><hideGene>true</hideGene></value>
         </match>
     </Operation>
@@ -11,7 +11,7 @@
     <Operation Class="PatchOperationConditional">
         <xpath>Defs/GeneDef[defName="AG_FrailBack"]</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/GeneDef[defName="AG_FrailBack"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+            <xpath>Defs/GeneDef[defName="AG_FrailBack"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
             <value><hideGene>true</hideGene></value>
         </match>
     </Operation>
