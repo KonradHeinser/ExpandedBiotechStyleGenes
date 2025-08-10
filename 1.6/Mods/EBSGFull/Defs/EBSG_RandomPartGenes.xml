@@ -4,6 +4,9 @@
 		<defName>AG_EBSGHealthWretchBlacklist</defName>
 		<blackListedDefNameStrings>
 			<li>EBSG_RandomTier</li>
+            <li>EBSG_Damaged</li>
+            <li>EBSG_Missing</li>
+            <li>EBSG_SlightlyDamaged</li>
 		</blackListedDefNameStrings>
 	</AlphaGenes.WretchBlacklistDef>
 
