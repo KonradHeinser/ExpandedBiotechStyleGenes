@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <AlphaGenes.WretchBlacklistDef MayRequire="Sarg.AlphaGenes">
+		<defName>AG_EBSGHealthWretchBlacklist</defName>
+		<blackListedDefNameStrings>
+			<li>EBSG_RandomTier</li>
+		</blackListedDefNameStrings>
+	</AlphaGenes.WretchBlacklistDef>
+
     <GeneCategoryDef>
         <defName>EBSG_RandomBodyParts</defName>
         <label>EBSG - Gambling Body Parts Away</label>
