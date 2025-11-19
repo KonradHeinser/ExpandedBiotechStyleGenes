@@ -116,8 +116,8 @@
         <displayOrderInCategory>102.6</displayOrderInCategory>
         <biostatMet>-1</biostatMet>
         <statFactors>
-            <SocialImpact>1.25</SocialImpact>
-            <TradePriceImprovement>1.25</TradePriceImprovement>
+            <SocialImpact>1.15</SocialImpact>
+            <TradePriceImprovement>1.1</TradePriceImprovement>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -134,8 +134,8 @@
         <displayOrderInCategory>102.7</displayOrderInCategory>
         <biostatMet>-2</biostatMet>
         <statFactors>
-            <SocialImpact>1.50</SocialImpact>
-            <TradePriceImprovement>1.50</TradePriceImprovement>
+            <SocialImpact>1.3</SocialImpact>
+            <TradePriceImprovement>1.2</TradePriceImprovement>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -152,8 +152,8 @@
         <displayOrderInCategory>102.8</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
         <statFactors>
-            <SocialImpact>1.75</SocialImpact>
-            <TradePriceImprovement>1.75</TradePriceImprovement>
+            <SocialImpact>1.45</SocialImpact>
+            <TradePriceImprovement>1.3</TradePriceImprovement>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -170,8 +170,8 @@
         <displayOrderInCategory>102.9</displayOrderInCategory>
         <biostatMet>-4</biostatMet>
         <statFactors>
-            <SocialImpact>2.00</SocialImpact>
-            <TradePriceImprovement>2.00</TradePriceImprovement>
+            <SocialImpact>1.6</SocialImpact>
+            <TradePriceImprovement>1.4</TradePriceImprovement>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -188,8 +188,8 @@
         <displayOrderInCategory>103</displayOrderInCategory>
         <biostatMet>-5</biostatMet>
         <statFactors>
-            <SocialImpact>2.25</SocialImpact>
-            <TradePriceImprovement>2.25</TradePriceImprovement>
+            <SocialImpact>1.75</SocialImpact>
+            <TradePriceImprovement>1.5</TradePriceImprovement>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -206,8 +206,8 @@
         <displayOrderInCategory>103.1</displayOrderInCategory>
         <biostatMet>-6</biostatMet>
         <statFactors>
-            <SocialImpact>2.50</SocialImpact>
-            <TradePriceImprovement>2.50</TradePriceImprovement>
+            <SocialImpact>1.9</SocialImpact>
+            <TradePriceImprovement>1.6</TradePriceImprovement>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
